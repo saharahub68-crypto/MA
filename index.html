@@ -1,0 +1,1612 @@
+<!DOCTYPE html>
+<html lang="ar" dir="rtl" data-type="software" class="i18n-pending">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<title data-i="meta.title">SAHARAHUB — التحول الرقمي وصناعة الألعاب ثلاثية الأبعاد في المغرب</title>
+<meta name="description" data-ic="meta.desc" content="SAHARAHUB SARLAU شركة مغربية تصمّم المنصات الرقمية وأنظمة التدبير والألعاب ثلاثية الأبعاد للتعليم والإدارة والمجتمع المدني. 31 شريكاً.">
+<meta name="page-type" content="software">
+<meta name="site-kind" content="software">
+<meta name="theme-color" content="#0B1026">
+<meta property="og:type" content="website">
+<meta property="og:site_name" content="SAHARAHUB">
+<meta property="og:title" data-ic="meta.title" content="SAHARAHUB — التحول الرقمي وصناعة الألعاب ثلاثية الأبعاد في المغرب">
+<meta property="og:description" data-ic="meta.desc" content="SAHARAHUB SARLAU شركة مغربية تصمّم المنصات الرقمية وأنظمة التدبير والألعاب ثلاثية الأبعاد للتعليم والإدارة والمجتمع المدني. 31 شريكاً.">
+<meta property="og:image" content="img/share.jpg">
+<meta name="twitter:card" content="summary_large_image">
+<link rel="icon" href="img/favicon.svg" type="image/svg+xml">
+<link rel="apple-touch-icon" href="img/apple-touch-icon.png">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&family=Inter:wght@400;500;600&family=Readex+Pro:wght@500;600;700&family=IBM+Plex+Sans+Arabic:wght@400;500;600&display=swap">
+<script>
+/* choose the language before the first paint: saved choice, then the browser's, then Arabic */
+(function(){var L="ar";try{var s=localStorage.getItem("sh-lang");if(s&&/^(ar|fr|en)$/.test(s)){L=s}else{var n=(navigator.languages||[navigator.language||""]);for(var i=0;i<n.length;i++){var c=String(n[i]).slice(0,2).toLowerCase();if(c==="ar"||c==="fr"||c==="en"){L=c;break}}}}catch(e){}
+var h=document.documentElement;h.lang=L;h.dir=L==="ar"?"rtl":"ltr";window.__LANG=L;
+if(window.matchMedia&&matchMedia("(prefers-reduced-motion: reduce)").matches)h.classList.add("rm");})();
+</script>
+<style>
+/* SAHARAHUB — company site v2 (Nov 2026)
+   kind: software studio (digital transformation + game development)
+   palette: the brand's own — Nuit #0B1026, Bleu Data #3B5BFF, Orange Sahara #FF7A30, Bleu clair #6E86FF, Sable #FFF6EE
+   type: Poppins + Inter (latin), Readex Pro + IBM Plex Sans Arabic (arabic)
+   effect: one WebGL ground in the hero ("data dunes", from the logo); moment: vision words light up as the section scrolls in */
+:root{
+  --night:#0B1026;--night-2:#141A3A;--night-3:#1E2650;
+  --blue:#3B5BFF;--blue-l:#6E86FF;--blue-d:#2A45D6;
+  --orange:#FF7A30;--orange-d:#C2410C;
+  --sand:#FFF6EE;--sand-2:#F7E9DC;--white:#FFFFFF;
+  --ink:#0B1026;--muted:#4A5068;--muted-d:#A9B0CC;--line:#E8DCD0;--line-d:rgba(255,255,255,.12);
+  --r-s:10px;--r-m:16px;--r-l:24px;--r-pill:999px;
+  --wrap:1240px;--gut:clamp(20px,5vw,64px);--hdr:72px;
+  --f-head:"Poppins","Readex Pro",system-ui,sans-serif;
+  --f-body:"Inter","IBM Plex Sans Arabic",system-ui,sans-serif;
+  --ease:cubic-bezier(.2,.8,.2,1);
+}
+html[lang=ar]{--f-head:"Readex Pro","Poppins",system-ui,sans-serif;--f-body:"IBM Plex Sans Arabic","Inter",system-ui,sans-serif}
+*,*::before,*::after{box-sizing:border-box}
+html{-webkit-text-size-adjust:100%;scroll-behavior:smooth;scroll-padding-top:var(--hdr)}
+html.rm{scroll-behavior:auto}
+html.i18n-pending body{visibility:hidden}
+body{margin:0;background:var(--sand);color:var(--ink);font-family:var(--f-body);font-size:17px;line-height:1.6;-webkit-font-smoothing:antialiased;text-rendering:optimizeLegibility}
+img,svg,canvas{display:block;max-width:100%}
+a{color:inherit}
+h1,h2,h3,p,ul,ol,figure{margin:0}
+ul,ol{padding:0;list-style:none}
+h1,h2,h3{font-family:var(--f-head);font-weight:700;line-height:1.12;letter-spacing:-.02em;text-wrap:balance}
+html[lang=ar] h1,html[lang=ar] h2,html[lang=ar] h3{letter-spacing:0;line-height:1.3}
+button,input,select,textarea{font:inherit;color:inherit}
+:focus-visible{outline:3px solid var(--blue-l);outline-offset:3px;border-radius:6px}
+.sr{position:absolute!important;width:1px;height:1px;padding:0;margin:-1px;overflow:hidden;clip:rect(0,0,0,0);white-space:nowrap;border:0}
+.skip{position:fixed;inset-inline-start:16px;top:-80px;z-index:100;background:var(--white);color:var(--ink);padding:12px 18px;border-radius:var(--r-s);font-weight:600;text-decoration:none;transition:top .2s}
+.skip:focus{top:12px}
+.wrap{width:100%;max-width:calc(var(--wrap) + 2*var(--gut));margin-inline:auto;padding-inline:var(--gut)}
+
+/* ---------- buttons (one pair) ---------- */
+.btn{display:inline-flex;align-items:center;justify-content:center;gap:10px;min-height:52px;padding:0 24px;border-radius:var(--r-pill);font-family:var(--f-head);font-weight:600;font-size:16px;text-decoration:none;border:1.5px solid transparent;cursor:pointer;transition:transform .18s var(--ease),background-color .18s,border-color .18s,box-shadow .18s;white-space:nowrap}
+.btn:hover{transform:translateY(-2px)}
+.btn:active{transform:translateY(0) scale(.97);transition-duration:.06s}
+.btn-primary{background:var(--blue);color:#fff;box-shadow:0 6px 20px -8px rgba(59,91,255,.7)}
+.btn-primary:hover{background:var(--blue-d);box-shadow:0 10px 26px -8px rgba(59,91,255,.8)}
+.btn-ghost{background:transparent;color:inherit;border-color:currentColor}
+.on-dark .btn-ghost{color:#fff;border-color:rgba(255,255,255,.45)}
+.on-dark .btn-ghost:hover{border-color:#fff;background:rgba(255,255,255,.06)}
+.btn-ghost:hover{background:rgba(11,16,38,.05)}
+.btn .arr{width:18px;height:18px;transition:transform .2s var(--ease)}
+.btn:hover .arr{transform:translateX(3px)}
+[dir=rtl] .btn .arr{transform:scaleX(-1)}
+[dir=rtl] .btn:hover .arr{transform:scaleX(-1) translateX(3px)}
+.tlink{display:inline-flex;align-items:center;gap:8px;min-height:44px;font-family:var(--f-head);font-weight:600;text-decoration:none;color:var(--blue);background:linear-gradient(currentColor,currentColor) no-repeat 0 100%/0 1.5px;background-position-x:var(--ux,0%);transition:background-size .3s var(--ease)}
+[dir=rtl] .tlink{--ux:100%}
+.tlink:hover{background-size:100% 1.5px}
+.tlink .arr{width:16px;height:16px}
+[dir=rtl] .tlink .arr{transform:scaleX(-1)}
+
+/* ---------- header ---------- */
+.hdr{position:fixed;inset-inline:0;top:0;z-index:50;height:var(--hdr);color:#fff;transition:background-color .25s,box-shadow .25s,backdrop-filter .25s}
+.hdr.scrolled{background:rgba(11,16,38,.96);backdrop-filter:saturate(1.4) blur(14px);-webkit-backdrop-filter:saturate(1.4) blur(14px);box-shadow:0 1px 0 rgba(255,255,255,.08)}
+.hdr .wrap{height:100%;display:flex;align-items:center;gap:28px}
+.brand{display:inline-flex;align-items:center;min-height:44px;flex:none}
+.brand img{height:34px;width:auto}
+.nav{display:flex;align-items:center;gap:4px;margin-inline-start:auto}
+.nav a{position:relative;display:inline-flex;align-items:center;min-height:44px;padding:0 12px;font-family:var(--f-head);font-weight:500;font-size:15px;color:rgba(255,255,255,.86);text-decoration:none;transition:color .2s}
+.nav a::after{content:"";position:absolute;inset-inline:12px;bottom:8px;height:1.5px;background:var(--orange);transform:scaleX(0);transform-origin:var(--to,left);transition:transform .3s var(--ease)}
+[dir=rtl] .nav a::after{--to:right}
+.nav a:hover{color:#fff}.nav a:hover::after,.nav a[aria-current=true]::after{transform:scaleX(1)}
+.langs{display:flex;align-items:center;gap:2px;padding:3px;border:1px solid rgba(255,255,255,.18);border-radius:var(--r-pill)}
+.langs button{min-width:44px;min-height:38px;padding:0 10px;border:0;border-radius:var(--r-pill);background:transparent;color:rgba(255,255,255,.8);font-family:var(--f-head);font-weight:600;font-size:13px;cursor:pointer;transition:background-color .2s,color .2s,transform .15s}
+.langs button:hover{color:#fff;background:rgba(255,255,255,.08)}
+.langs button:active{transform:scale(.95)}
+.langs button[aria-pressed=true]{background:#fff;color:var(--night)}
+.langs button[data-lang=ar]{font-family:"Readex Pro",sans-serif;font-size:15px}
+.hdr .btn{min-height:44px;padding:0 18px;font-size:14px}
+.menu-btn{display:none;margin-inline-start:auto;width:48px;height:48px;border-radius:var(--r-pill);border:1px solid rgba(255,255,255,.22);background:transparent;color:#fff;cursor:pointer;align-items:center;justify-content:center}
+.menu-btn span{position:relative;width:18px;height:1.5px;background:currentColor;transition:background-color .2s}
+.menu-btn span::before,.menu-btn span::after{content:"";position:absolute;inset-inline:0;height:1.5px;background:currentColor;transition:transform .25s var(--ease)}
+.menu-btn span::before{top:-6px}.menu-btn span::after{top:6px}
+.menu-btn[aria-expanded=true] span{background:transparent}
+.menu-btn[aria-expanded=true] span::before{transform:translateY(6px) rotate(45deg)}
+.menu-btn[aria-expanded=true] span::after{transform:translateY(-6px) rotate(-45deg)}
+.mnav{position:fixed;inset:0;z-index:45;background:var(--night);color:#fff;padding:calc(var(--hdr) + 24px) var(--gut) 32px;display:flex;flex-direction:column;gap:8px;opacity:0;visibility:hidden;transition:opacity .25s,visibility .25s}
+.mnav.open{opacity:1;visibility:visible}
+.mnav a.ml{display:flex;align-items:center;min-height:56px;font-family:var(--f-head);font-size:26px;font-weight:600;text-decoration:none;border-bottom:1px solid var(--line-d)}
+.mnav .langs{align-self:flex-start;margin-top:20px}
+.mnav .btn{margin-top:auto}
+@media (max-width:1080px){.hdr .nav,.hdr .langs,.hdr .hdr-cta{display:none}.menu-btn{display:inline-flex}}
+@media (min-width:1081px){.mnav{display:none}}
+
+/* ---------- sections: one per screen, heading first ---------- */
+main>section{position:relative;min-height:100vh;min-height:100svh;padding-block:calc(var(--hdr) + 48px) 64px;display:flex;flex-direction:column}
+main>section>.wrap{flex:1;display:flex;flex-direction:column}
+.eyebrow{display:inline-flex;align-items:center;gap:10px;font-family:var(--f-head);font-weight:600;font-size:14px;letter-spacing:.08em;text-transform:uppercase;color:var(--blue)}
+html[lang=ar] .eyebrow{letter-spacing:0;font-size:16px}
+.eyebrow::before{content:"";width:22px;height:2px;background:var(--orange);border-radius:2px}
+.on-dark .eyebrow{color:var(--blue-l)}
+.h2{font-size:clamp(30px,3.3vw,48px);margin-top:14px;max-width:22ch}
+html[lang=ar] .h2{font-size:clamp(28px,3vw,44px)}
+.intro{margin-top:14px;max-width:60ch;color:var(--muted);font-size:18px}
+.on-dark{background:var(--night);color:#fff}
+.on-dark .intro{color:var(--muted-d)}
+.sec-head{margin-bottom:clamp(24px,3.6vh,44px)}
+
+/* ---------- hero ---------- */
+.hero{background:var(--night);color:#fff;overflow:hidden;padding-block:calc(var(--hdr) + 32px) 40px!important}
+.hero-gl{position:absolute;inset:0;width:100%;height:100%}
+.hero .wrap{position:relative;z-index:1}
+.hero-grid{display:grid;grid-template-columns:minmax(0,1.12fr) minmax(0,.88fr);grid-template-rows:1fr auto;column-gap:48px;flex:1}
+.hero-copy{align-self:center;padding-block:24px}
+.hero .eyebrow{color:var(--blue-l)}
+.hero h1{font-size:clamp(40px,5.1vw,74px);margin-top:18px;max-width:14ch}
+html[lang=ar] .hero h1{font-size:clamp(36px,4.5vw,64px);max-width:15ch}
+.hero .lead{margin-top:22px;max-width:52ch;font-size:19px;color:#C9CEE6}
+.actions{display:flex;flex-wrap:wrap;gap:14px;margin-top:34px}
+.hero-art{position:relative;min-height:400px}
+.hero-art img{display:none;position:absolute;inset:0;margin:auto;width:min(80%,420px);height:auto}
+html.no-gl .hero-art img{display:block}
+.hero-stats{grid-column:1/-1;display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;border-top:1px solid var(--line-d);padding-top:22px}
+.hero-stats li{display:flex;align-items:baseline;gap:12px}
+.hero-stats b{font-family:"Poppins",sans-serif;font-weight:700;font-size:clamp(30px,2.8vw,42px);line-height:1;color:#fff}
+.hero-stats li:first-child b{color:var(--orange)}
+.hero-stats span{color:var(--muted-d);font-size:15px;line-height:1.35}
+.motion-toggle{position:absolute;z-index:2;inset-inline-end:var(--gut);top:calc(var(--hdr) + 16px);display:inline-flex;align-items:center;gap:8px;min-height:44px;padding:0 14px;border-radius:var(--r-pill);border:1px solid rgba(255,255,255,.2);background:rgba(11,16,38,.55);color:#fff;font-size:13px;font-weight:500;cursor:pointer;transition:background-color .2s,transform .15s}
+.motion-toggle:hover{background:rgba(255,255,255,.1)}
+.motion-toggle:active{transform:scale(.96)}
+.motion-toggle svg{width:14px;height:14px}
+.motion-toggle .i-play{display:none}
+html.paused .motion-toggle .i-play{display:block}html.paused .motion-toggle .i-pause{display:none}
+html.rm .motion-toggle{display:none}
+/* entrance, once on load */
+[data-enter] .en{opacity:0;transform:translateY(18px);transition:opacity .8s var(--ease),transform .9s var(--ease);transition-delay:calc(var(--i,0)*90ms + 120ms)}
+html.entered [data-enter] .en{opacity:1;transform:none}
+html.rm [data-enter] .en{opacity:1;transform:none;transition:none}
+
+/* ---------- about ---------- */
+.about{background:var(--sand)}
+.about-grid{display:grid;grid-template-columns:minmax(0,1.05fr) minmax(0,.95fr);gap:clamp(32px,5vw,80px);align-items:start}
+.about .h2{max-width:20ch}
+.about p.body{margin-top:22px;font-size:18px;color:var(--muted);max-width:56ch}
+.logo-note{display:flex;gap:16px;align-items:flex-start;margin-top:26px;padding-top:24px;border-top:1px solid var(--line);max-width:56ch}
+.logo-note img{width:52px;height:52px;flex:none}
+.logo-note p{font-size:16px;color:var(--muted)}
+.partners{background:var(--white);border-radius:var(--r-l);padding:clamp(24px,3vw,40px);box-shadow:0 1px 0 var(--line),0 24px 60px -36px rgba(11,16,38,.35)}
+.partners .big{display:flex;align-items:baseline;gap:14px;flex-wrap:wrap}
+.partners .big b{font-family:"Poppins",sans-serif;font-size:clamp(64px,6.5vw,96px);line-height:.9;color:var(--blue);letter-spacing:-.04em}
+.partners .big span{font-family:var(--f-head);font-weight:600;font-size:20px}
+.tiles{display:grid;grid-template-columns:repeat(8,minmax(0,1fr));gap:8px;margin-top:26px}
+.tile{aspect-ratio:1;border-radius:8px;background:var(--c);transition:opacity .25s,transform .25s var(--ease)}
+.c1{--c:var(--blue)}.c2{--c:var(--orange)}.c3{--c:var(--blue-l)}.c4{--c:var(--night)}
+.legend{display:grid;grid-template-columns:1fr 1fr;gap:6px 20px;margin-top:24px}
+.legend li{display:flex;align-items:center;gap:10px;min-height:40px;font-size:15px;color:var(--muted);cursor:default}
+.legend li b{font-family:"Poppins",sans-serif;font-size:18px;color:var(--ink);min-width:26px}
+.legend li i{width:12px;height:12px;border-radius:3px;background:var(--c);flex:none}
+.partners:has(.legend .c1:hover) .tile:not(.c1),.partners:has(.legend .c2:hover) .tile:not(.c2),.partners:has(.legend .c3:hover) .tile:not(.c3),.partners:has(.legend .c4:hover) .tile:not(.c4){opacity:.18}
+.partners:has(.legend li:hover) .tile{transform:scale(.92)}
+
+/* ---------- why ---------- */
+.why{background:var(--white)}
+.why-grid{display:grid;grid-template-columns:repeat(2,minmax(0,1fr));gap:18px;align-content:start}
+.card{background:var(--sand);border:1px solid var(--line);border-radius:var(--r-l);padding:22px 26px;transition:transform .25s var(--ease),box-shadow .25s,border-color .25s}
+.card:hover{transform:translateY(-2px);box-shadow:0 18px 40px -28px rgba(11,16,38,.45);border-color:#DCCBBB}
+.why-card{display:flex;flex-direction:column}
+.why-card .lbl{font-family:var(--f-head);font-weight:600;font-size:13px;letter-spacing:.06em;text-transform:uppercase;color:var(--muted)}
+html[lang=ar] .why-card .lbl{letter-spacing:0;font-size:14px}
+.why-card .gap{margin-top:6px;color:var(--muted);font-size:16px}
+.why-card .ans-wrap{margin-top:14px;padding-top:14px;border-top:1px dashed #D9C6B3}
+.why-card .ans-top{display:flex;flex-wrap:wrap;align-items:center;justify-content:space-between;gap:8px 12px}
+.why-card .lbl.b{color:var(--blue)}
+.why-card .ans{margin-top:8px;font-family:var(--f-head);font-weight:600;font-size:18px;line-height:1.4}
+.chip{display:inline-flex;align-items:center;gap:8px;flex:none;padding:6px 12px 6px 8px;border-radius:var(--r-pill);background:var(--white);border:1px solid var(--line);font-family:var(--f-head);font-weight:600;font-size:13px}
+[dir=rtl] .chip{padding:6px 8px 6px 12px}
+.chip img{width:22px;height:22px;object-fit:contain}
+.chip .dot{width:22px;height:22px;border-radius:50%;display:grid;place-items:center;background:var(--night)}
+.chip .dot svg{width:14px;height:14px}
+
+/* ---------- vision (dealt moment: words light up) ---------- */
+.vision{background:var(--blue);color:#fff}
+.vision .eyebrow{color:#fff}
+.vision .eyebrow::before{background:var(--orange)}
+.vision-statement{margin-top:24px;font-size:clamp(34px,4.4vw,66px);line-height:1.14;max-width:22ch;letter-spacing:-.025em}
+html[lang=ar] .vision-statement{font-size:clamp(30px,3.9vw,58px);line-height:1.4;letter-spacing:0;max-width:24ch}
+.vision-statement .w{color:rgba(255,255,255,.38);transition:color .35s var(--ease)}
+.vision-statement .w.on{color:#fff}
+html.rm .vision-statement .w{color:#fff}
+.vision .wrap{justify-content:space-between;gap:40px}
+.mission{display:grid;grid-template-columns:minmax(0,220px) minmax(0,1fr);gap:24px;align-items:start;border-top:1px solid rgba(255,255,255,.3);padding-top:24px}
+.mission h3{font-size:16px;font-weight:600;text-transform:uppercase;letter-spacing:.08em;color:#fff;display:flex;align-items:center;gap:10px}
+html[lang=ar] .mission h3{letter-spacing:0;font-size:18px}
+.mission h3::before{content:"";width:22px;height:2px;background:var(--orange);border-radius:2px}
+.mission p{font-size:clamp(18px,1.5vw,22px);line-height:1.55;max-width:56ch;color:#E9EDFF}
+
+/* ---------- goals ---------- */
+.goals{background:var(--sand)}
+.goals-grid{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(32px,5vw,72px);align-items:start}
+
+.goal-list{counter-reset:g;border-top:1px solid var(--line)}
+.goal-list li{display:grid;grid-template-columns:52px minmax(0,1fr);gap:2px 12px;padding:13px 0;border-bottom:1px solid var(--line)}
+.goal-list li::before{counter-increment:g;content:"0" counter(g);grid-row:1/3;font-family:"Poppins",sans-serif;font-weight:700;font-size:15px;color:var(--orange-d);padding-top:3px}
+.goal-list h3{font-size:19px;letter-spacing:-.01em}
+.goal-list p{font-size:16px;color:var(--muted)}
+
+
+html.paused *,html.paused *::before,html.paused *::after{animation-play-state:paused!important}
+html.rm *,html.rm *::before,html.rm *::after{animation:none!important}
+
+/* ---------- goals: the logo comes apart (after Medusa JF-4) ---------- */
+.goals-grid{grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr)!important}
+.goal-list li{position:relative;border-radius:12px;padding-inline:10px!important;margin-inline:-10px;transition:background-color .3s}
+.goal-list li.on{background:var(--white);box-shadow:0 10px 30px -22px rgba(11,16,38,.5)}
+.goal-list li.on::before{color:var(--orange)}
+.goal-list li.on h3{color:var(--blue)}
+.gjump{position:absolute;inset:0;width:100%;border:0;background:transparent;cursor:pointer;border-radius:12px}
+.gjump:hover{background:rgba(59,91,255,.05)}
+.gstage{display:flex;flex-direction:column;gap:14px;align-self:stretch}
+.gview{position:relative;flex:1;min-height:440px}
+.gview canvas,.gview .rings,.gview .leaders{position:absolute;inset:0;width:100%;height:100%}
+.gview .rings{pointer-events:none}
+.gview .rings ellipse{fill:none;stroke:#D9C6B1;stroke-width:1}
+.gview .rings ellipse.d{stroke-dasharray:3 6}
+.gview .leaders{pointer-events:none;overflow:visible}
+.gview .leaders line{stroke:var(--orange);stroke-width:1}
+.gview .leaders circle{fill:var(--orange)}
+.glabel{position:absolute;left:0;top:0;display:flex;align-items:center;gap:8px;padding:6px 10px;border-radius:8px;background:rgba(255,246,238,.85);font-family:var(--f-head);font-weight:600;font-size:14px;white-space:nowrap;color:var(--muted);opacity:0;transition:opacity .3s,color .3s,background-color .3s;will-change:transform}
+.glabel i{font-style:normal;font-family:"Poppins",sans-serif;font-size:12px;color:var(--orange-d)}
+.glabel.on{color:#fff;background:var(--blue)}
+.glabel.on i{color:#FFD2A8}
+.gstill{display:none;position:absolute;inset:0;margin:auto;width:min(60%,300px)}
+html.no-gl-goals .gstill{display:block}
+html.no-gl-goals .gview canvas,html.no-gl-goals .glabel,html.no-gl-goals .leaders{display:none}
+.ghud{display:grid;grid-template-columns:auto auto minmax(0,1fr) auto;gap:16px;align-items:center;background:rgba(255,255,255,.72);border:1px solid var(--line);border-radius:var(--r-m);padding:10px 16px;backdrop-filter:blur(8px)}
+.gmeta{display:flex;flex-direction:column;line-height:1.2}
+.gmeta span{font-size:12px;color:var(--muted)}
+.gmeta b{font-family:"Poppins",sans-serif;font-size:18px;color:var(--orange-d)}
+.grail{position:relative;height:44px;cursor:pointer;touch-action:none}
+.grail .gbar,.grail .gfill{position:absolute;inset-inline-start:0;top:50%;height:2px;margin-top:-1px;background:var(--line)}
+.grail .gbar{inset-inline-end:0}
+.grail .gfill{background:var(--orange);width:0}
+.grail em{position:absolute;top:50%;width:1px;height:12px;margin-top:-6px;background:#C9B49E}
+.grail .gknob{position:absolute;top:50%;width:16px;height:16px;margin-top:-8px;margin-inline-start:-8px;border-radius:50%;background:#fff;border:2px solid var(--orange)}
+.gtc{font-family:"Poppins",sans-serif;font-size:13px;color:var(--muted);font-variant-numeric:tabular-nums;direction:ltr}
+
+/* shared small pause button */
+.mt-inline{position:static!important;color:inherit!important;background:transparent!important;border-color:currentColor!important;opacity:.75}
+.mt-inline:hover{opacity:1}
+.ghud .mt-inline{color:var(--ink)!important;border-color:var(--line)!important;opacity:1}
+
+/* ---------- digital transformation: the scanner belt (after Distill) ---------- */
+.fields{padding-bottom:40px!important}
+.fields>.wrap{flex:none!important}
+.tf-head{display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:end}
+.tf-head .intro{margin-top:0}
+.ticks{display:flex;flex-wrap:wrap;gap:8px;margin-top:16px}
+.ticks li{padding:6px 12px;border-radius:var(--r-pill);border:1px solid var(--line-d);font-size:14px;color:#DDE2F5}
+.ticks.light li{border-color:var(--line);color:var(--muted);background:rgba(255,255,255,.6)}
+.belt-wrap{--cw:clamp(230px,21vw,440px);--ch:calc(var(--cw)*1.3);--gap:3;position:relative;margin-top:clamp(18px,3vh,34px);flex:1}
+.belt{position:relative;height:calc(var(--ch) + 120px);direction:ltr;cursor:grab;touch-action:pan-y;user-select:none;-webkit-user-select:none;overflow:hidden}
+.belt.drag{cursor:grabbing}
+.codes{position:absolute;inset:0;-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 22vw);mask-image:linear-gradient(90deg,transparent 0,#000 22vw)}
+.cards{position:absolute;inset:0}
+.doc,.code{position:absolute;top:64px;left:0;width:var(--cw);height:var(--ch);will-change:transform,clip-path}
+.belt canvas.fx{position:absolute;inset:0;width:100%;height:100%;pointer-events:none;z-index:2}
+.code{container-type:inline-size;overflow:hidden;visibility:hidden}
+.code>div{font:400 3.55cqw/1.5 ui-monospace,"SFMono-Regular",Menlo,Consolas,"IBM Plex Sans Arabic",monospace;color:#8F9BCF;white-space:pre;padding:4cqw 2cqw;direction:ltr;text-align:left}
+.code .c{color:#59618A}.code .k{color:#6E86FF}.code .s{color:#DCE3FF}.code .n{color:#FFB06A}
+.scan{position:absolute;left:50%;top:50px;height:calc(var(--ch) + 30px);width:0;z-index:3;pointer-events:none}
+.scan i{position:absolute;left:-2px;top:0;bottom:0;width:4px;border-radius:4px;background:linear-gradient(#DCE3FF,#fff 12%,#fff 88%,#DCE3FF);box-shadow:0 0 10px 2px rgba(175,189,255,.9),0 0 34px 10px rgba(110,134,255,.35)}
+.scan b{position:absolute;left:2px;top:4%;bottom:4%;width:42px;background:linear-gradient(90deg,rgba(255,122,48,.55),transparent);filter:blur(6px)}
+.badge{position:absolute;left:50%;top:-4px;transform:translateX(-50%);z-index:4;display:flex;flex-direction:column;align-items:center;gap:7px;pointer-events:none}
+.badge .bl{font-size:12px;color:var(--muted-d)}
+.badge .pill{display:flex;height:26px;border-radius:var(--r-pill);overflow:hidden;box-shadow:0 0 18px rgba(110,134,255,.45);font:600 12.5px/26px "Poppins","Readex Pro",sans-serif;white-space:nowrap}
+.badge .bn{background:var(--blue);color:#fff;padding:0 12px;min-width:9ch;text-align:center;font-variant-numeric:tabular-nums}
+.badge .bp{background:#FFE3CF;color:#C2410C;padding:0 12px;font-variant-numeric:tabular-nums}
+.tf-foot{display:flex!important;flex-direction:row!important;align-items:center;justify-content:space-between;gap:16px;margin-top:6px}
+.hint{font-size:14px;color:var(--muted-d)}
+/* the paper */
+html[dir=rtl]{--docdir:rtl}html[dir=ltr]{--docdir:ltr}
+.doc{border-radius:14px;overflow:hidden;container-type:inline-size;box-shadow:0 30px 60px -34px rgba(0,0,0,.75);color:#2A1E14}
+.doc>.in{position:absolute;inset:0;direction:var(--docdir);display:flex;flex-direction:column;gap:3.2cqw;padding:8cqw;font-size:4cqw;line-height:1.35;background:#FBF6EF}
+.doc h4{margin:0;font-family:var(--f-head);font-weight:700;font-size:8.2cqw;line-height:1.2}
+.doc .k{font-size:3.4cqw;font-weight:600;color:#8A6A50}
+.doc .row{display:flex;align-items:center;justify-content:space-between;gap:3cqw}
+.doc .row.end{margin-top:auto}
+.doc .no{font:600 3.4cqw "Poppins",sans-serif;color:#B08F72;direction:ltr}
+.doc .f{display:flex;align-items:flex-end;gap:2cqw;color:#6B5543;font-size:3.8cqw}
+.doc .f i{flex:1;height:0;border-bottom:.4cqw dotted #B89A80;margin-bottom:1cqw}
+.doc .f b{color:#2A1E14;font-weight:600}
+.doc .ln{display:block;height:1.1cqw;border-radius:2cqw;background:#E7D8C7;width:100%}
+.d-cert>.in::after{content:"";position:absolute;inset:3.4cqw;border:1.2cqw double #D9C2A6;border-radius:2cqw;pointer-events:none}
+.stamp{width:22cqw;height:22cqw;border-radius:50%;border:.8cqw solid rgba(59,91,255,.6);color:rgba(59,91,255,.8);display:grid;place-items:center;text-align:center;font-size:3cqw;font-weight:700;transform:rotate(-12deg)}
+.sig{width:30cqw;height:auto}
+.d-form>.in{background:#FFFFFF}
+.opts{display:flex;flex-wrap:wrap;gap:2cqw 4cqw;font-size:3.6cqw;color:#6B5543}
+.opts span{display:flex;align-items:center;gap:1.6cqw}
+.opts i{width:4.2cqw;height:4.2cqw;border:.5cqw solid #8A6A50;border-radius:1cqw}
+.opts .x i{background:var(--blue);border-color:var(--blue);box-shadow:inset 0 0 0 .8cqw #fff}
+.photo{align-self:flex-end;width:20cqw;height:24cqw;border:.5cqw dashed #C9B49E;border-radius:1.6cqw;margin-bottom:-12cqw}
+html[dir=rtl] .photo{align-self:flex-start}
+.d-lesson>.in{background:#FFFDF8 repeating-linear-gradient(180deg,transparent 0 7.4cqw,#DCE6F5 7.4cqw 7.8cqw)}
+.earthd{position:relative;width:52cqw;height:26cqw;overflow:hidden;align-self:center;margin-block:1cqw}
+.earthd i{position:absolute;left:50%;bottom:0;border-radius:50%;transform:translate(-50%,50%)}
+.earthd i:nth-child(1){width:52cqw;height:52cqw;background:#8B5E3C}
+.earthd i:nth-child(2){width:44cqw;height:44cqw;background:#E0702F}
+.earthd i:nth-child(3){width:28cqw;height:28cqw;background:#F4A340}
+.earthd i:nth-child(4){width:13cqw;height:13cqw;background:#FFE08A}
+.ex{font-size:3.6cqw;color:#3B5BFF;font-weight:600;margin-top:auto}
+.d-notice>.in{background:#FFF1C2;padding-top:11cqw}
+.d-notice .pinx{position:absolute;top:3.5cqw;left:50%;width:5cqw;height:5cqw;margin-left:-2.5cqw;border-radius:50%;background:#E2551E;box-shadow:0 1cqw 1.5cqw rgba(0,0,0,.25)}
+.d-notice h4{font-size:10cqw;color:#C2410C;line-height:1.1}
+.chips{display:flex;flex-wrap:wrap;gap:2cqw}
+.chips span{padding:1cqw 3cqw;border:.5cqw solid #2A1E14;border-radius:5cqw;font-size:3.6cqw;font-weight:600}
+.tear{display:flex;margin:auto -8cqw -8cqw;height:20cqw;border-top:.5cqw dashed #C9A970}
+.tear i{flex:1;border-inline-end:.5cqw dashed #C9A970;background:repeating-linear-gradient(90deg,transparent 0 3cqw,#E8D28F 3cqw 3.4cqw)}
+.d-prod>.in{background:#E7CFA6;align-items:flex-start}
+.hole{width:7cqw;height:7cqw;border-radius:50%;background:#0B1026;box-shadow:inset 0 0 0 1.2cqw #D2B386;align-self:center;margin-bottom:2cqw}
+.d-prod h4{font-size:10cqw}
+.d-prod .w{font:600 5cqw "Poppins",sans-serif;color:#7A4A20}
+.dates{width:46cqw;height:auto;align-self:center;margin-block:auto}
+.barcode{width:60%;height:10cqw;align-self:center;background:repeating-linear-gradient(90deg,#2A1E14 0 .6cqw,transparent .6cqw 1.5cqw,#2A1E14 1.5cqw 1.9cqw,transparent 1.9cqw 3.1cqw,#2A1E14 3.1cqw 4.3cqw,transparent 4.3cqw 5cqw)}
+.d-sketch>.in{background-color:#F7F9FF;background-image:linear-gradient(#DCE3FF 1px,transparent 1px),linear-gradient(90deg,#DCE3FF 1px,transparent 1px);background-size:6cqw 6cqw}
+.lvl{width:100%;height:auto;margin-top:auto;margin-bottom:auto}
+
+/* ---------- games: the robot on the dune (after Nova Agent) ---------- */
+.games{padding:0!important;min-height:0!important;background-color:var(--sand);background-image:linear-gradient(90deg,rgba(11,16,38,.06) 1px,transparent 1px);background-size:calc(100% / 6) 100%;background-position:calc(100% / 12) 0}
+.games .pin{position:relative;min-height:100vh;min-height:100svh;padding-block:calc(var(--hdr) + 32px) 0;display:flex;flex-direction:column}
+.g-copy{padding-bottom:48px}
+@media (min-width:821px) and (min-height:620px){html:not(.rm) .games{height:200vh}html:not(.rm) .games .pin{position:sticky;top:0;height:100vh;height:100svh}}
+.g-grid{flex:1;display:grid;grid-template-columns:minmax(0,1fr) minmax(0,1fr);gap:clamp(24px,4vw,64px);align-items:stretch}
+.g-copy{display:flex;flex-direction:column;align-self:center}
+.g-copy .h2{max-width:18ch}
+.strip{margin-top:28px}
+.strip-k{font-size:13px;font-weight:600;color:var(--muted);font-family:var(--f-head)}
+.tabs-view{overflow:hidden;margin-top:8px;-webkit-mask-image:linear-gradient(90deg,#000 62%,transparent);mask-image:linear-gradient(90deg,#000 62%,transparent)}
+[dir=rtl] .tabs-view{-webkit-mask-image:linear-gradient(270deg,#000 62%,transparent);mask-image:linear-gradient(270deg,#000 62%,transparent)}
+.tabs{display:flex;transition:transform .9s cubic-bezier(.65,0,.2,1)}
+.tabs li{position:relative;flex:none;width:250px;height:66px;display:flex;align-items:center;gap:12px;padding-inline:12px;color:rgba(11,16,38,.25);font-family:var(--f-head);font-weight:600;font-size:16px;transition:color .5s,opacity .5s}
+.tabs li b{flex:none;width:38px;height:38px;display:grid;place-items:center;border:1px solid currentColor;border-radius:10px;font:600 13px "Poppins",sans-serif}
+.tabs li.on{color:var(--ink)}
+.tabs li.on b{background:var(--blue);border-color:var(--blue);color:#fff}
+.tabs li.past{opacity:0}
+.tabs li.on::before{content:"";position:absolute;inset:4px;border:1px solid rgba(11,16,38,.12);border-radius:12px;background:
+  linear-gradient(var(--orange),var(--orange)) top left/12px 2px no-repeat,linear-gradient(var(--orange),var(--orange)) top left/2px 12px no-repeat,
+  linear-gradient(var(--orange),var(--orange)) top right/12px 2px no-repeat,linear-gradient(var(--orange),var(--orange)) top right/2px 12px no-repeat,
+  linear-gradient(var(--orange),var(--orange)) bottom left/12px 2px no-repeat,linear-gradient(var(--orange),var(--orange)) bottom left/2px 12px no-repeat,
+  linear-gradient(var(--orange),var(--orange)) bottom right/12px 2px no-repeat,linear-gradient(var(--orange),var(--orange)) bottom right/2px 12px no-repeat,rgba(255,255,255,.7)}
+.tabs li>*{position:relative}
+.g-copy .mt-inline{align-self:flex-start;margin-top:18px;color:var(--ink)!important;border-color:var(--line)!important;opacity:1}
+.rstage{position:relative;min-height:420px}
+.rstage canvas{position:absolute;inset:0;width:100%;height:100%}
+.rstill{display:none;position:absolute;inset:0;margin:auto;width:min(60%,320px)}
+html.no-gl-robot .rstill{display:block}
+html.no-gl-robot .rstage canvas{display:none}
+
+@media (max-width:1080px){
+  .goals-grid{grid-template-columns:minmax(0,1fr)!important}
+  .gview{min-height:420px}
+}
+@media (max-width:820px){
+  .g-grid{grid-template-columns:minmax(0,1fr)}
+  .rstage{min-height:62vh}
+  .tf-head{grid-template-columns:minmax(0,1fr);align-items:start}
+  .belt-wrap{--cw:62vw;--gap:6}
+  .codes{-webkit-mask-image:linear-gradient(90deg,transparent 0,#000 30vw);mask-image:linear-gradient(90deg,transparent 0,#000 30vw)}
+  .ghud{grid-template-columns:auto minmax(0,1fr) auto}
+  .ghud .mt-inline{grid-column:1/-1;justify-self:start}
+}
+@media (max-width:640px){
+  .tf-foot{flex-direction:column!important;align-items:flex-start}
+  .glabel{font-size:12px;padding:4px 8px}
+  .tabs li{width:210px;font-size:15px}
+  .rstage{min-height:440px}
+}
+
+/* ---------- projects ---------- */
+.work{background:var(--white)}
+.work-grid{display:grid;grid-template-columns:repeat(3,minmax(0,1fr));gap:24px;flex:1;align-content:start}
+.proj{position:relative;display:flex;flex-direction:column;background:var(--sand);border:1px solid var(--line);border-radius:var(--r-l);overflow:hidden;transition:transform .25s var(--ease),box-shadow .25s}
+.proj:hover{transform:translateY(-2px);box-shadow:0 22px 48px -30px rgba(11,16,38,.5)}
+.proj .vis{position:relative;aspect-ratio:16/10;overflow:hidden;background:var(--tint,#EEF1FF)}
+.proj .vis>.art{position:absolute;inset:0;transition:transform .5s var(--ease)}
+.proj:hover .vis>.art{transform:scale(1.03)}
+.proj .vis .logo{position:absolute;inset:0;margin:auto;height:62%;width:auto;object-fit:contain}
+.proj .badge{position:absolute;top:14px;inset-inline-start:14px;z-index:1;padding:6px 12px;border-radius:var(--r-pill);background:rgba(255,255,255,.92);font-size:12px;font-weight:600;color:var(--ink);display:inline-flex;align-items:center;gap:6px}
+.proj .badge::before{content:"";width:7px;height:7px;border-radius:50%;background:var(--bc,#22A35A)}
+.proj .body{display:flex;flex-direction:column;flex:1;padding:22px 24px 18px}
+.proj .tag{font-size:13px;font-weight:600;color:var(--blue);font-family:var(--f-head)}
+.proj h3{margin-top:6px;font-size:24px}
+.proj p{margin-top:8px;font-size:16px;color:var(--muted)}
+.proj .tlink{margin-top:auto;padding-top:12px}
+.proj .tlink::after{content:"";position:absolute;inset:0;border-radius:inherit}
+.ardoukh .vis{background:var(--night)}
+.ardoukh .name{position:absolute;left:22px;bottom:16px;z-index:1;font-family:"Poppins",sans-serif;font-weight:700;font-size:clamp(28px,2.6vw,38px);line-height:1;color:#fff;letter-spacing:-.02em;direction:ltr;text-align:start}
+.ardoukh .name small{display:block;font-size:.4em;letter-spacing:.32em;color:var(--night);margin-top:8px}
+.ardoukh .badge{--bc:var(--orange)}
+
+/* ---------- contact ---------- */
+.contact .wrap{justify-content:center}
+.ct-grid{display:grid;grid-template-columns:minmax(0,.9fr) minmax(0,1.1fr);gap:clamp(32px,5vw,80px);align-items:start;flex:1}
+.ct-grid .intro{font-size:18px}
+.next{margin-top:30px;border-top:1px solid var(--line-d);padding-top:22px}
+.next h3{font-size:15px;font-weight:600;color:var(--blue-l);font-family:var(--f-head);text-transform:uppercase;letter-spacing:.08em}
+html[lang=ar] .next h3{letter-spacing:0;font-size:17px}
+.next ol{counter-reset:n;margin-top:14px;display:grid;gap:12px}
+.next li{display:flex;gap:14px;align-items:baseline;color:#DDE2F5;font-size:16px}
+.next li::before{counter-increment:n;content:counter(n);flex:none;width:28px;height:28px;border-radius:50%;display:grid;place-items:center;background:rgba(110,134,255,.16);color:#fff;font-family:"Poppins",sans-serif;font-weight:600;font-size:13px;transform:translateY(-2px)}
+form.f{background:var(--night-2);border:1px solid var(--line-d);border-radius:var(--r-l);padding:clamp(22px,2.6vw,34px);display:grid;grid-template-columns:1fr 1fr;gap:16px 18px}
+.fld{display:flex;flex-direction:column;gap:6px}
+.fld.full{grid-column:1/-1}
+.fld label{font-size:14px;font-weight:500;color:#DDE2F5}
+.fld input,.fld select,.fld textarea{width:100%;min-height:50px;padding:12px 14px;border-radius:12px;border:1px solid rgba(255,255,255,.16);background:#0E1430;color:#fff;font-size:16px;transition:border-color .2s,box-shadow .2s}
+.fld textarea{min-height:120px;resize:vertical}
+.fld select{appearance:none;background-image:url("data:image/svg+xml,%3Csvg xmlns='http://www.w3.org/2000/svg' width='12' height='8'%3E%3Cpath d='M1 1l5 5 5-5' fill='none' stroke='%23A9B0CC' stroke-width='1.6'/%3E%3C/svg%3E");background-repeat:no-repeat;background-position:right 14px center;padding-inline-end:36px}
+[dir=rtl] .fld select{background-position:left 14px center}
+.fld input:hover,.fld select:hover,.fld textarea:hover{border-color:rgba(255,255,255,.3)}
+.fld input:focus,.fld select:focus,.fld textarea:focus{outline:none;border-color:var(--blue-l);box-shadow:0 0 0 3px rgba(110,134,255,.3)}
+.fld [aria-invalid=true]{border-color:#FF8A8A}
+.err{min-height:0;font-size:13px;color:#FFB4B4}
+.err:empty{display:none}
+.f-foot{grid-column:1/-1;display:flex;flex-wrap:wrap;align-items:center;gap:16px}
+.status{font-size:15px}
+.status.ok{color:#7FE3AE}.status.bad{color:#FFB4B4}.status.info{color:#FFD29E}
+.hp{display:none}
+
+/* ---------- footer ---------- */
+.ftr{background:#070B1C;color:#C9CEE6;padding-block:56px 32px;font-size:15px}
+.ftr-top{display:grid;grid-template-columns:minmax(0,1.4fr) repeat(2,minmax(0,1fr));gap:40px;padding-bottom:36px;border-bottom:1px solid var(--line-d)}
+.ftr-top img{height:30px;width:auto}
+.ftr-top p{margin-top:14px;max-width:34ch;color:var(--muted-d)}
+.ftr h2{font-family:var(--f-head);font-size:14px;font-weight:600;color:#fff;letter-spacing:.06em;text-transform:uppercase}
+html[lang=ar] .ftr h2{letter-spacing:0;font-size:15px}
+.ftr ul{margin-top:10px}
+.ftr ul a{display:inline-flex;align-items:center;min-height:40px;text-decoration:none;color:#C9CEE6;background:linear-gradient(currentColor,currentColor) no-repeat 0 85%/0 1px;transition:background-size .3s var(--ease),color .2s}
+[dir=rtl] .ftr ul a{background-position-x:100%}
+.ftr ul a:hover{color:#fff;background-size:100% 1px}
+.ftr-bot{display:flex;flex-wrap:wrap;justify-content:space-between;gap:16px;padding-top:22px;color:#8D94B3}
+.ftr-bot a{color:#C9CEE6;text-decoration:none;display:inline-flex;align-items:center;min-height:44px}
+.ftr-bot a:hover{color:#fff}
+
+/* ---------- responsive ---------- */
+@media (max-width:1080px){
+  .hero-grid{grid-template-columns:1fr;grid-template-rows:auto}
+  .hero-copy{padding-block:16px 0}
+  .hero-art{min-height:300px}
+  .about-grid,.goals-grid,.ct-grid{grid-template-columns:1fr}
+  .work-grid{grid-template-columns:1fr 1fr}
+  .work-grid .ardoukh{grid-column:1/-1}
+  .work-grid .ardoukh .vis{aspect-ratio:16/7}
+  .ftr-top{grid-template-columns:1fr 1fr}
+  .ftr-top>div:first-child{grid-column:1/-1}
+}
+@media (max-width:820px){
+  .why-grid{grid-template-columns:1fr}
+  .mission{grid-template-columns:1fr;gap:10px}
+}
+@media (max-width:640px){
+  body{font-size:16px}
+  main>section{padding-block:calc(var(--hdr) + 28px) 48px}
+  .hero{padding-block:calc(var(--hdr) + 20px) 28px!important}
+  .hero .lead{font-size:17px}
+  .actions .btn{width:100%}
+  .hero-art{min-height:230px}
+  .hero-stats{grid-template-columns:1fr;gap:12px}
+  .motion-toggle{top:auto;bottom:16px}
+  .work-grid{grid-template-columns:1fr}
+  .work-grid .ardoukh .vis{aspect-ratio:4/3}
+  form.f{grid-template-columns:1fr}
+  .f-foot .btn{width:100%}
+  .legend{grid-template-columns:1fr}
+  .ftr-top{grid-template-columns:1fr}
+}
+</style>
+</head>
+<body>
+<!-- deal: software studio · brand palette (client's own colours) · Poppins/Inter + Readex Pro/IBM Plex Sans Arabic · radius soft
+     hero: split, WebGL "data dunes" ground drawn from the logo · moment: vision words light up · rhythm: dark-band
+     client slots: ARDOUKH 3D key art (img/ardoukh-key-art.jpg when ready) · share image img/share.jpg -->
+<a class="skip" href="#main" data-i="skip">انتقل إلى المحتوى</a>
+
+<header class="hdr">
+  <div class="wrap">
+    <a class="brand" href="#top" data-ia="home" aria-label="SAHARAHUB، العودة إلى أعلى الصفحة"><img src="img/saharahub-horizontal-on-dark.svg" alt="saharahub" width="160" height="30"></a>
+    <nav class="nav" data-ia="nav.label" aria-label="التنقل الرئيسي">
+      <a href="#about" data-i="nav.about">من نحن</a>
+      <a href="#vision" data-i="nav.vision">رؤيتنا</a>
+      <a href="#goals" data-i="nav.goals">أهدافنا</a>
+      <a href="#fields" data-i="nav.fields">مجالاتنا</a>
+      <a href="#work" data-i="nav.work">مشاريعنا</a>
+    </nav>
+    <div class="langs" role="group" data-ia="nav.lang" aria-label="اللغة">
+      <button type="button" data-lang="ar" lang="ar" aria-label="العربية">ع</button>
+      <button type="button" data-lang="fr" lang="fr" aria-label="Français">FR</button>
+      <button type="button" data-lang="en" lang="en" aria-label="English">EN</button>
+    </div>
+    <a class="btn btn-primary hdr-cta" href="#contact" data-i="cta.talk">حدّثنا عن مشروعك</a>
+    <button class="menu-btn" type="button" aria-expanded="false" aria-controls="mnav" data-ia="nav.menu" aria-label="فتح القائمة"><span></span></button>
+  </div>
+</header>
+<div class="mnav" id="mnav">
+  <a class="ml" href="#about" data-i="nav.about">من نحن</a>
+  <a class="ml" href="#vision" data-i="nav.vision">رؤيتنا</a>
+  <a class="ml" href="#goals" data-i="nav.goals">أهدافنا</a>
+  <a class="ml" href="#fields" data-i="nav.fields">مجالاتنا</a>
+  <a class="ml" href="#work" data-i="nav.work">مشاريعنا</a>
+  <div class="langs" role="group" data-ia="nav.lang" aria-label="اللغة">
+    <button type="button" data-lang="ar" lang="ar" aria-label="العربية">ع</button>
+    <button type="button" data-lang="fr" lang="fr" aria-label="Français">FR</button>
+    <button type="button" data-lang="en" lang="en" aria-label="English">EN</button>
+  </div>
+  <a class="btn btn-primary" href="#contact" data-i="cta.talk">حدّثنا عن مشروعك</a>
+</div>
+
+<main id="main">
+  <!-- 1 · HERO -->
+  <section class="hero on-dark" id="top" aria-labelledby="h1" data-enter>
+    <canvas class="hero-gl" aria-hidden="true"></canvas>
+    <div class="wrap">
+      <div class="hero-grid">
+        <div class="hero-copy">
+          <p class="eyebrow en" style="--i:0" data-i="hero.k">التحول الرقمي · صناعة الألعاب · المغرب</p>
+          <h1 id="h1" class="en" style="--i:1" data-i="hero.h1">منصات رقمية وألعاب ثلاثية الأبعاد، صُنعت في المغرب.</h1>
+          <p class="lead en" style="--i:2" data-i="hero.sub">SAHARAHUB SARLAU شركة مغربية ناشئة للتحول الرقمي وصناعة الألعاب. نبني للمدارس والإدارات والجمعيات والتعاونيات أدوات تُستعمل كل يوم.</p>
+          <div class="actions en" style="--i:3">
+            <a class="btn btn-primary" href="#contact"><span data-i="cta.talk">حدّثنا عن مشروعك</span><svg class="arr" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+            <a class="btn btn-ghost" href="#work" data-i="cta.work">اكتشف مشاريعنا</a>
+          </div>
+        </div>
+        <div class="hero-art en" style="--i:2" aria-hidden="true"><img src="img/saharahub-symbol-on-dark.svg" alt=""></div>
+        <ul class="hero-stats en" style="--i:4">
+          <li><b>31</b><span data-i="st.1">شريكاً</span></li>
+          <li><b>2</b><span data-i="st.2">منصتان على الإنترنت</span></li>
+          <li><b>1</b><span data-i="st.3">لعبة فيديو قيد التطوير</span></li>
+        </ul>
+      </div>
+    </div>
+    <button class="motion-toggle" type="button" aria-pressed="false">
+      <svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12" rx="1" fill="currentColor"/><rect x="8.5" y="1" width="3.5" height="12" rx="1" fill="currentColor"/></svg>
+      <svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg>
+      <span class="mt-label" data-i="motion.pause">إيقاف الحركة</span>
+    </button>
+  </section>
+
+  <!-- 2 · ABOUT -->
+  <section class="about" id="about" aria-labelledby="about-h">
+    <div class="wrap">
+      <div class="about-grid">
+        <div>
+          <p class="eyebrow" data-i="about.k">من نحن</p>
+          <h2 class="h2" id="about-h" data-i="about.h">شركة مغربية ناشئة تحوّل حاجات الميدان إلى أدوات رقمية.</h2>
+          <p class="body" data-i="about.p1">تعمل SAHARAHUB في مجالين يكمّل أحدهما الآخر: التحول الرقمي للتعليم والإدارة والاقتصاد الاجتماعي، وصناعة الألعاب التعليمية وألعاب الفيديو ثلاثية الأبعاد. نصمّم منتجاتنا ونطوّرها بأنفسنا، من الفكرة إلى الإطلاق.</p>
+          <div class="logo-note">
+            <img src="img/saharahub-symbol.svg" alt="" width="52" height="52">
+            <p data-i="about.p2">في شعارنا كثيبان يرسمان حرف S: الصحراء تبقى ممتلئة، والرقمي يتحوّل إلى خطوط بيانات. هذا عملنا: ننطلق من الواقع ونحوّله إلى رقمي.</p>
+          </div>
+        </div>
+        <div class="partners">
+          <p class="big"><b>31</b><span data-i="part.h">شريكاً يعملون معنا</span></p>
+          <div class="tiles" aria-hidden="true"><i class="tile c1"></i><i class="tile c1"></i><i class="tile c1"></i><i class="tile c1"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c2"></i><i class="tile c3"></i><i class="tile c3"></i><i class="tile c3"></i><i class="tile c3"></i><i class="tile c3"></i><i class="tile c4"></i><i class="tile c4"></i></div>
+          <ul class="legend">
+            <li class="c1"><i></i><b>4</b><span data-i="part.1">مؤسسات تعليمية</span></li>
+            <li class="c2"><i></i><b>20</b><span data-i="part.2">جمعيات</span></li>
+            <li class="c3"><i></i><b>5</b><span data-i="part.3">مقاولات</span></li>
+            <li class="c4"><i></i><b>2</b><span data-i="part.4">تعاونيات</span></li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 3 · WHY -->
+  <section class="why" id="why" aria-labelledby="why-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-i="why.k">لماذا</p>
+        <h2 class="h2" id="why-h" data-i="why.h">لماذا أسّسنا SAHARAHUB</h2>
+        <p class="intro" data-i="why.p">لأن أربع فجوات ما زالت قائمة حولنا، ونبني جواباً لكل واحدة منها.</p>
+      </div>
+      <div class="why-grid">
+        <article class="card why-card">
+          <p class="lbl" data-i="why.gap">الواقع</p>
+          <p class="gap" data-i="why1.gap">كثير من التلاميذ يحفظون الدروس العلمية دون أن يفهموها.</p>
+          <div class="ans-wrap"><div class="ans-top"><p class="lbl b" data-i="why.ans">جوابنا</p><span class="chip"><img src="img/eduplay-logo.webp" alt="" width="22" height="22">EduPlay3D</span></div><h3 class="ans" data-i="why1.ans">مختبرات تفاعلية ثلاثية الأبعاد بالعربية، يجرّب فيها التلميذ ويقيس بنفسه.</h3></div>
+        </article>
+        <article class="card why-card">
+          <p class="lbl" data-i="why.gap">الواقع</p>
+          <p class="gap" data-i="why2.gap">ما زالت مؤسسات وإدارات كثيرة تدبّر الملفات والطلبات على الورق.</p>
+          <div class="ans-wrap"><div class="ans-top"><p class="lbl b" data-i="why.ans">جوابنا</p><span class="chip"><span class="dot"><img src="img/saharahub-symbol-on-dark.svg" alt="" width="14" height="14" style="width:14px;height:14px"></span><span data-i="why2.tag">أنظمة التدبير</span></span></div><h3 class="ans" data-i="why2.ans">أنظمة تدبير وخدمات إلكترونية تجمع الملفات والطلبات والمؤشرات في أداة واحدة.</h3></div>
+        </article>
+        <article class="card why-card">
+          <p class="lbl" data-i="why.gap">الواقع</p>
+          <p class="gap" data-i="why3.gap">تحتاج الجمعيات والتعاونيات إلى كفاءات لا تجدها بسهولة.</p>
+          <div class="ans-wrap"><div class="ans-top"><p class="lbl b" data-i="why.ans">جوابنا</p><span class="chip"><img src="img/sv-symbol.svg" alt="" width="22" height="22">Skilled Volunteer MA</span></div><h3 class="ans" data-i="why3.ans">منصة تربط المتطوعات والمتطوعين أصحاب الكفاءات بالجمعيات والتعاونيات والمقاولات.</h3></div>
+        </article>
+        <article class="card why-card">
+          <p class="lbl" data-i="why.gap">الواقع</p>
+          <p class="gap" data-i="why4.gap">معظم الألعاب التي يلعبها الشباب المغربي صُمّمت خارج المغرب.</p>
+          <div class="ans-wrap"><div class="ans-top"><p class="lbl b" data-i="why.ans">جوابنا</p><span class="chip"><span class="dot"><svg viewBox="0 0 14 14" aria-hidden="true"><path d="M1 11c2-3 4-4.5 6-4.5S11 8 13 11z" fill="#FF7A30"/><path d="M2 4h10M3.5 6h7" stroke="#6E86FF" stroke-width="1.2" stroke-linecap="round"/></svg></span>ARDOUKH 3D</span></div><h3 class="ans" data-i="why4.ans">استوديو ألعاب مغربي، يبدأ بلعبة الفيديو ARDOUKH 3D.</h3></div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 4 · VISION & MISSION (dealt moment) -->
+  <section class="vision" id="vision" aria-labelledby="vis-h">
+    <div class="wrap">
+      <div>
+        <p class="eyebrow" data-i="vis.k">رؤيتنا</p>
+        <h2 class="vision-statement" id="vis-h" data-isplit="vis.h">أن يتعلّم جيلٌ كامل ويعمل ويلعب بأدوات رقمية صُنعت في المغرب، من الصحراء إلى كل جهات المملكة.</h2>
+      </div>
+      <div class="mission">
+        <h3 data-i="mis.k">رسالتنا</h3>
+        <p data-i="mis.p">نصمّم ونطوّر منصات وأنظمة وألعاباً سهلة الاستعمال، بالعربية والفرنسية والإنجليزية، تخدم المدرسة والإدارة والمجتمع المدني.</p>
+      </div>
+    </div>
+  </section>
+
+  <!-- 5 · GOALS — the logo comes apart, one goal per part (after Medusa JF-4) -->
+  <section class="goals" id="goals" aria-labelledby="goals-h">
+    <div class="wrap">
+      <div class="goals-grid">
+        <div>
+          <p class="eyebrow" data-i="goals.k">أهدافنا</p>
+          <h2 class="h2" id="goals-h" data-i="goals.h">خمسة أهداف للسنوات القادمة</h2>
+          <ol class="goal-list" style="margin-top:24px">
+            <li><h3 id="g1-t" data-i="g1.t">التعليم</h3><p data-i="g1.p">رقمنة الدروس العلمية بمختبرات ثلاثية الأبعاد بالعربية، متوافقة مع المقرر المغربي.</p><button class="gjump" type="button" aria-describedby="g1-t" data-ia="go.show" aria-label="اعرضه على الشعار"></button></li>
+            <li><h3 id="g2-t" data-i="g2.t">الإدارة</h3><p data-i="g2.p">تعويض الورق في المؤسسات التعليمية والإدارات بأنظمة تدبير وخدمات إلكترونية.</p><button class="gjump" type="button" aria-describedby="g2-t" data-ia="go.show" aria-label="اعرضه على الشعار"></button></li>
+            <li><h3 id="g3-t" data-i="g3.t">المجتمع المدني</h3><p data-i="g3.p">ربط الشباب أصحاب الكفاءات بالجمعيات والتعاونيات والمقاولات عبر التطوع.</p><button class="gjump" type="button" aria-describedby="g3-t" data-ia="go.show" aria-label="اعرضه على الشعار"></button></li>
+            <li><h3 id="g4-t" data-i="g4.t">ألعاب الفيديو</h3><p data-i="g4.p">إطلاق ARDOUKH 3D، أول لعبة فيديو ثلاثية الأبعاد من إنتاج SAHARAHUB.</p><button class="gjump" type="button" aria-describedby="g4-t" data-ia="go.show" aria-label="اعرضه على الشعار"></button></li>
+            <li><h3 id="g5-t" data-i="g5.t">التسويق الرقمي</h3><p data-i="g5.p">مساعدة التعاونيات والمقاولات الصغيرة على الظهور والبيع عبر الإنترنت.</p><button class="gjump" type="button" aria-describedby="g5-t" data-ia="go.show" aria-label="اعرضه على الشعار"></button></li>
+          </ol>
+        </div>
+        <div class="gstage">
+          <div class="gview" aria-hidden="true">
+            <svg class="rings" viewBox="0 0 400 400" preserveAspectRatio="none"><ellipse cx="200" cy="230" rx="180" ry="120"/><ellipse class="d" cx="200" cy="230" rx="140" ry="90"/><ellipse cx="200" cy="230" rx="96" ry="60"/></svg>
+            <canvas></canvas>
+            <svg class="leaders"><line/><line/><line/><line/><line/><circle r="3"/><circle r="3"/><circle r="3"/><circle r="3"/><circle r="3"/></svg>
+            <div class="glabel"><i>01</i><span data-i="g1.t">التعليم</span></div>
+            <div class="glabel"><i>02</i><span data-i="g2.t">الإدارة</span></div>
+            <div class="glabel"><i>03</i><span data-i="g3.t">المجتمع المدني</span></div>
+            <div class="glabel"><i>04</i><span data-i="g4.t">ألعاب الفيديو</span></div>
+            <div class="glabel"><i>05</i><span data-i="g5.t">التسويق الرقمي</span></div>
+            <img class="gstill" src="img/saharahub-symbol.svg" alt="">
+          </div>
+          <div class="ghud">
+            <button class="motion-toggle mt-inline" type="button" aria-pressed="false"><svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12" rx="1" fill="currentColor"/><rect x="8.5" y="1" width="3.5" height="12" rx="1" fill="currentColor"/></svg><svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg><span class="mt-label" data-i="motion.pause">إيقاف الحركة</span></button>
+            <div class="gmeta"><span data-i="go.k">الهدف</span><b class="gnum">01 / 05</b></div>
+            <div class="grail" role="slider" tabindex="0" aria-valuemin="0" aria-valuemax="25" aria-valuenow="0" data-ia="go.rail" aria-label="مسار الأهداف الخمسة"><span class="gbar"></span><span class="gfill"></span><em style="inset-inline-start:10.40%"></em><em style="inset-inline-start:28.00%"></em><em style="inset-inline-start:45.60%"></em><em style="inset-inline-start:63.20%"></em><em style="inset-inline-start:80.80%"></em><span class="gknob"></span></div>
+            <span class="gtc">00:00 / 00:25</span>
+          </div>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 6 · DIGITAL TRANSFORMATION — paper crosses the scanner and becomes data (after Distill) -->
+  <section class="fields on-dark" id="fields" aria-labelledby="fields-h">
+    <div class="wrap">
+      <div class="tf-head">
+        <div><p class="eyebrow" data-i="tf.k">التحول الرقمي</p><h2 class="h2" id="fields-h" data-i="tf.h">من الورق إلى البيانات</h2></div>
+        <div><p class="intro" data-i="tf.p">نحوّل الاستمارات والملفات والدروس الورقية إلى خدمات رقمية: المعلومة نفسها، تُعالَج أسرع وتُتابَع بسهولة.</p><ul class="ticks"><li data-i="f1.i1">أنظمة التدبير والخدمات الإلكترونية</li><li data-i="f1.i2">المنصات الاجتماعية</li><li data-i="f1.i3">التسويق الرقمي</li></ul></div>
+      </div>
+    </div>
+    <div class="belt-wrap">
+      <div class="belt" aria-hidden="true">
+        <div class="codes"><div class="code" data-c="0"></div><div class="code" data-c="1"></div><div class="code" data-c="2"></div><div class="code" data-c="3"></div><div class="code" data-c="4"></div><div class="code" data-c="5"></div></div>
+        <div class="cards">
+          <div class="doc d-cert"><div class="in">
+            <div class="row"><span class="k" data-i="cd1.k">مؤسسة تعليمية</span><span class="no">N° 0427</span></div>
+            <h4 data-i="cd1.t">شهادة مدرسية</h4>
+            <div class="f"><span data-i="cd1.f1">الاسم الكامل</span><i></i></div>
+            <div class="f"><span data-i="cd1.f2">المستوى</span><b data-i="cd1.v2">الثالثة إعدادي</b></div>
+            <div class="f"><span data-i="cd1.f3">السنة الدراسية</span><b>2026 / 2027</b></div>
+            <span class="ln" style="width:92%"></span><span class="ln" style="width:68%"></span>
+            <div class="row end"><span class="stamp" data-i="cd1.stamp">ختم المؤسسة</span><svg class="sig" viewBox="0 0 80 30"><path d="M2 22c8-14 12-16 14-8s-2 12 4 4 10-14 12-6-4 10 6 2 12-8 18-4 8 6 22-2" fill="none" stroke="#2A3A8A" stroke-width="2" stroke-linecap="round"/></svg></div>
+          </div></div>
+          <div class="doc d-form"><div class="in">
+            <span class="photo"></span>
+            <h4 data-i="cd2.t">استمارة التسجيل</h4>
+            <div class="opts"><span><i></i><em data-i="cd2.o1">الابتدائي</em></span><span class="x"><i></i><em data-i="cd2.o2">الإعدادي</em></span><span><i></i><em data-i="cd2.o3">التأهيلي</em></span></div>
+            <div class="f"><span data-i="cd2.f1">اسم التلميذ</span><i></i></div>
+            <div class="f"><span data-i="cd2.f2">تاريخ الازدياد</span><b>__ / __ / ____</b></div>
+            <span class="ln"></span><span class="ln" style="width:80%"></span><span class="ln" style="width:55%"></span>
+            <div class="f row end"><span data-i="cd2.f3">توقيع وليّ الأمر</span><i></i></div>
+          </div></div>
+          <div class="doc d-lesson"><div class="in">
+            <span class="k" data-i="cd3.k">علوم · الدرس 3</span>
+            <h4 data-i="lab1">طبقات الأرض</h4>
+            <div class="earthd"><i></i><i></i><i></i><i></i></div>
+            <span class="ln"></span><span class="ln" style="width:86%"></span><span class="ln" style="width:62%"></span>
+            <p class="ex" data-i="cd3.ex">تمرين: سمِّ الطبقات الأربع.</p>
+          </div></div>
+          <div class="doc d-notice"><div class="in">
+            <span class="pinx"></span>
+            <span class="k" data-i="cd4.k">جمعية محلية</span>
+            <h4 data-i="cd4.t">نبحث عن متطوعين</h4>
+            <div class="chips"><span data-i="cd4.s1">تصميم</span><span data-i="cd4.s2">تكوين</span><span data-i="cd4.s3">محاسبة</span></div>
+            <span class="ln"></span><span class="ln" style="width:74%"></span>
+            <div class="tear"><i></i><i></i><i></i><i></i><i></i><i></i></div>
+          </div></div>
+          <div class="doc d-prod"><div class="in">
+            <span class="hole"></span>
+            <span class="k" data-i="cd5.k">منتج تعاونية</span>
+            <h4 data-i="cd5.t">تمور الواحة</h4>
+            <p class="w" data-i="cd5.w">1 كلغ</p>
+            <svg class="dates" viewBox="0 0 100 60"><path d="M50 4c-6 8-8 18-6 30M50 4c8 6 12 16 12 28M50 4c-14 4-22 12-26 24M50 4c14 2 24 10 28 22" fill="none" stroke="#6B4A2A" stroke-width="1.6" stroke-linecap="round"/><g fill="#7A3A12"><ellipse cx="22" cy="36" rx="5" ry="7"/><ellipse cx="34" cy="42" rx="5" ry="7"/><ellipse cx="46" cy="38" rx="5" ry="7"/><ellipse cx="58" cy="44" rx="5" ry="7"/><ellipse cx="70" cy="38" rx="5" ry="7"/><ellipse cx="80" cy="30" rx="5" ry="7"/><ellipse cx="40" cy="52" rx="5" ry="7"/><ellipse cx="64" cy="54" rx="5" ry="7"/></g></svg>
+            <span class="barcode"></span>
+          </div></div>
+          <div class="doc d-sketch"><div class="in">
+            <div class="row"><h4 data-i="cd6.t">المستوى 1</h4><span class="k" data-i="cd6.k">رسم أوّلي</span></div>
+            <svg class="lvl" viewBox="0 0 100 80" fill="none" stroke="#3A3F5C" stroke-width="1.2" stroke-linecap="round" stroke-linejoin="round"><path d="M2 62c10-10 20-12 30-4s18 6 26-4 22-10 40 0"/><path d="M2 72c14-6 30-6 46 0s34 4 50-2" stroke-dasharray="2 3"/><circle cx="22" cy="44" r="3"/><circle cx="32" cy="40" r="3"/><circle cx="42" cy="44" r="3"/><path d="M80 52V28l10 4-10 4" /><circle cx="12" cy="44" r="2.4"/><path d="M12 47v7m0-5-3 3m3-3 3 3m-3 2-2.5 4m2.5-4 2.5 4"/><path d="M50 26c4-4 10-4 14 0" stroke="#FF7A30"/><path d="M56 22l3-3 3 3" stroke="#FF7A30"/></svg>
+          </div></div>
+        </div>
+        <canvas class="fx"></canvas>
+      </div>
+      <div class="scan" aria-hidden="true"><i></i><b></b></div>
+      <div class="badge" aria-hidden="true"><span class="bl" data-i="tf.badge">الرقمنة</span><span class="pill"><span class="bn">0 / 7</span><span class="bp">0%</span></span></div>
+    </div>
+    <div class="wrap tf-foot"><p class="hint" data-i="tf.hint">اسحب الشريط إلى اليمين لتعيد الورقة كما كانت.</p><button class="motion-toggle mt-inline" type="button" aria-pressed="false"><svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12" rx="1" fill="currentColor"/><rect x="8.5" y="1" width="3.5" height="12" rx="1" fill="currentColor"/></svg><svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg><span class="mt-label" data-i="motion.pause">إيقاف الحركة</span></button></div>
+  </section>
+
+  <!-- 7 · GAMES — a SAHARAHUB robot on the dune (after Nova Agent) -->
+  <section class="games" id="games" aria-labelledby="games-h">
+    <div class="pin">
+      <div class="wrap g-grid">
+        <div class="g-copy">
+          <p class="eyebrow" data-i="gm.k">صناعة الألعاب</p>
+          <h2 class="h2" id="games-h" data-i="gm.h">شخصيات وعوالم ثلاثية الأبعاد تعمل في المتصفح</h2>
+          <p class="intro" data-i="gm.p">هذه الشخصية مبنية بالكود فقط وتعمل الآن في صفحتك: حرّك المؤشر وستلتفت إليك، وانزل لترى وجهها عن قرب. بالروح نفسها نصنع مختبرات EduPlay3D التفاعلية.</p>
+          <ul class="ticks light"><li data-i="f2.i1">الألعاب التعليمية</li><li data-i="f2.i2">تجارب تفاعلية ثلاثية الأبعاد</li><li data-i="f2.i3">ألعاب الفيديو</li></ul>
+          <div class="strip" aria-hidden="true"><p class="strip-k" data-i="gm.strip">مختبرات EduPlay3D</p>
+            <div class="tabs-view"><ol class="tabs"><li><b>01</b><span data-i="lab1">طبقات الأرض</span></li><li><b>02</b><span data-i="lab2">القلب</span></li><li><b>03</b><span data-i="lab3">قانون أوم</span></li><li><b>04</b><span data-i="lab4">الطائرة المسيّرة</span></li><li><b>05</b><span data-i="lab5">الدورة الدموية</span></li><li><b>06</b><span data-i="lab6">حركة المقذوفات</span></li></ol></div>
+          </div>
+          <button class="motion-toggle mt-inline" type="button" aria-pressed="false"><svg class="i-pause" viewBox="0 0 14 14" aria-hidden="true"><rect x="2" y="1" width="3.5" height="12" rx="1" fill="currentColor"/><rect x="8.5" y="1" width="3.5" height="12" rx="1" fill="currentColor"/></svg><svg class="i-play" viewBox="0 0 14 14" aria-hidden="true"><path d="M3 1.5v11l9-5.5z" fill="currentColor"/></svg><span class="mt-label" data-i="motion.pause">إيقاف الحركة</span></button>
+        </div>
+        <div class="rstage" aria-hidden="true"><canvas></canvas><img class="rstill" src="img/saharahub-symbol.svg" alt=""></div>
+      </div>
+    </div>
+  </section>
+
+  <!-- 8 · PROJECTS -->
+  <section class="work" id="work" aria-labelledby="work-h">
+    <div class="wrap">
+      <div class="sec-head">
+        <p class="eyebrow" data-i="work.k">مشاريعنا</p>
+        <h2 class="h2" style="max-width:30ch" id="work-h" data-i="work.h">ثلاثة مشاريع من إنتاج SAHARAHUB</h2>
+      </div>
+      <div class="work-grid">
+        <article class="proj" style="--tint:#ECEFFF">
+          <div class="vis"><span class="badge" style="--bc:#3B5BFF" data-i="p1.st">نسخة تجريبية</span><div class="art"><img class="logo" src="img/eduplay-logo.webp" alt="EduPlay3D" width="416" height="440"></div></div>
+          <div class="body">
+            <p class="tag" data-i="p1.tag">منصة تعليمية ثلاثية الأبعاد</p>
+            <h3>EduPlay3D</h3>
+            <p data-i="p1.p">10 مختبرات علمية تفاعلية بالعربية لتلاميذ الابتدائي والإعدادي، تعمل في المتصفح دون تثبيت.</p>
+            <a class="tlink" href="https://eduplay3d.lovable.app/" target="_blank" rel="noopener" data-ia="p1.aria" aria-label="زيارة EduPlay3D (يفتح في علامة تبويب جديدة)"><span data-i="p1.cta">زيارة EduPlay3D</span><svg class="arr" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </article>
+        <article class="proj" style="--tint:#E4F3F3">
+          <div class="vis"><span class="badge" data-i="p2.st">على الإنترنت</span><div class="art"><img class="logo" src="img/sv-symbol.svg" alt="Skilled Volunteer MA" width="256" height="256"></div></div>
+          <div class="body">
+            <p class="tag" data-i="p2.tag">منصة التطوع بالكفاءات</p>
+            <h3>Skilled Volunteer MA</h3>
+            <p data-i="p2.p">منصة مغربية تربط المتطوعات والمتطوعين بالجمعيات والتعاونيات والمقاولات، بالعربية والفرنسية والإنجليزية.</p>
+            <a class="tlink" href="https://skilledvolunteerma1.lovable.app/" target="_blank" rel="noopener" data-ia="p2.aria" aria-label="زيارة Skilled Volunteer MA (يفتح في علامة تبويب جديدة)"><span data-i="p2.cta">زيارة Skilled Volunteer MA</span><svg class="arr" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M5 11 11 5M6 5h5v5" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </article>
+        <article class="proj ardoukh">
+          <!-- client slot: replace .art with ARDOUKH 3D key art when it exists -->
+          <div class="vis"><span class="badge" data-i="p3.st">قريباً</span><div class="art"><svg viewBox="0 0 400 300" preserveAspectRatio="xMidYMid slice" width="100%" height="100%" aria-hidden="true"><rect width="400" height="300" fill="#0B1026"/><circle cx="259" cy="17" r="1.2" fill="#fff" opacity="0.37"/><circle cx="118" cy="26" r="1.6" fill="#fff" opacity="0.49"/><circle cx="377" cy="35" r="0.8" fill="#fff" opacity="0.61"/><circle cx="236" cy="44" r="1.2" fill="#fff" opacity="0.25"/><circle cx="95" cy="53" r="1.6" fill="#fff" opacity="0.37"/><circle cx="354" cy="62" r="0.8" fill="#fff" opacity="0.49"/><circle cx="213" cy="71" r="1.2" fill="#fff" opacity="0.61"/><circle cx="72" cy="80" r="1.6" fill="#fff" opacity="0.25"/><circle cx="331" cy="89" r="0.8" fill="#fff" opacity="0.37"/><circle cx="190" cy="98" r="1.2" fill="#fff" opacity="0.49"/><circle cx="49" cy="107" r="1.6" fill="#fff" opacity="0.61"/><circle cx="308" cy="116" r="0.8" fill="#fff" opacity="0.25"/><circle cx="167" cy="125" r="1.2" fill="#fff" opacity="0.37"/><circle cx="26" cy="134" r="1.6" fill="#fff" opacity="0.49"/><circle cx="285" cy="143" r="0.8" fill="#fff" opacity="0.61"/><circle cx="144" cy="152" r="1.2" fill="#fff" opacity="0.25"/><circle cx="3" cy="11" r="1.6" fill="#fff" opacity="0.37"/><circle cx="262" cy="20" r="0.8" fill="#fff" opacity="0.49"/><circle cx="121" cy="29" r="1.2" fill="#fff" opacity="0.61"/><circle cx="380" cy="38" r="1.6" fill="#fff" opacity="0.25"/><circle cx="239" cy="47" r="0.8" fill="#fff" opacity="0.37"/><circle cx="98" cy="56" r="1.2" fill="#fff" opacity="0.49"/><circle cx="357" cy="65" r="1.6" fill="#fff" opacity="0.61"/><circle cx="216" cy="74" r="0.8" fill="#fff" opacity="0.25"/><circle cx="75" cy="83" r="1.2" fill="#fff" opacity="0.37"/><circle cx="334" cy="92" r="1.6" fill="#fff" opacity="0.49"/><circle cx="193" cy="101" r="0.8" fill="#fff" opacity="0.61"/><circle cx="52" cy="110" r="1.2" fill="#fff" opacity="0.25"/><circle cx="311" cy="119" r="1.6" fill="#fff" opacity="0.37"/><circle cx="170" cy="128" r="0.8" fill="#fff" opacity="0.49"/><circle cx="29" cy="137" r="1.2" fill="#fff" opacity="0.61"/><circle cx="288" cy="146" r="1.6" fill="#fff" opacity="0.25"/><circle cx="147" cy="155" r="0.8" fill="#fff" opacity="0.37"/><path d="M210 104a75 75 0 0 1 150 0z" fill="#6E86FF" opacity=".12"/><rect x="210" y="92" width="150" height="6" rx="1" fill="#6E86FF" opacity="0.9"/><rect x="232" y="80" width="118" height="4" rx="1" fill="#6E86FF" opacity="0.75"/><rect x="256" y="70" width="82" height="2.5" rx="1" fill="#6E86FF" opacity="0.6"/><rect x="276" y="62" width="50" height="1.5" rx="1" fill="#6E86FF" opacity="0.45"/><rect x="300" y="56" width="18" height="1" rx="1" fill="#6E86FF" opacity="0.35"/><rect x="150" y="100" width="40" height="1.5" rx="1" fill="#6E86FF" opacity="0.3"/><rect x="330" y="48" width="10" height="1" rx="1" fill="#6E86FF" opacity="0.3"/><path d="M0 190 C70 150 120 160 180 182 S300 150 400 168 V300 H0z" fill="#5A2A14"/><path d="M0 220 C60 196 130 200 200 222 S330 196 400 214 V300 H0z" fill="#B24A18"/><path d="M0 252 C90 230 150 236 230 256 S350 238 400 248 V300 H0z" fill="#FF7A30"/></svg></div><p class="name" aria-hidden="true">ARDOUKH<small>3D GAME</small></p></div>
+          <div class="body">
+            <p class="tag" data-i="p3.tag">لعبة فيديو ثلاثية الأبعاد</p>
+            <h3>ARDOUKH 3D</h3>
+            <p data-i="p3.p">أول لعبة فيديو من استوديو SAHARAHUB، قيد التطوير حالياً.</p>
+            <a class="tlink" href="#contact" data-topic="games"><span data-i="p3.cta">أخبروني عند الإطلاق</span><svg class="arr" viewBox="0 0 16 16" fill="none" aria-hidden="true"><path d="M3 8h10m-4-4 4 4-4 4" stroke="currentColor" stroke-width="1.6" stroke-linecap="round" stroke-linejoin="round"/></svg></a>
+          </div>
+        </article>
+      </div>
+    </div>
+  </section>
+
+  <!-- 9 · CONTACT -->
+  <section class="contact on-dark" id="contact" aria-labelledby="ct-h">
+    <div class="wrap">
+      <div class="ct-grid">
+        <div>
+          <p class="eyebrow" data-i="ct.k">تواصل</p>
+          <h2 class="h2" id="ct-h" data-i="ct.h">لنتحدّث عن مشروعك</h2>
+          <p class="intro" data-i="ct.p">مدرسة أو إدارة أو جمعية أو تعاونية أو مقاولة؟ صِف حاجتك في بضعة أسطر، وسنجيبك عبر البريد الإلكتروني.</p>
+          <div class="next">
+            <h3 data-i="ct.next">بعد رسالتك</h3>
+            <ol><li data-i="ct.n1">نقرأ حاجتك ونجيبك عبر البريد الإلكتروني.</li><li data-i="ct.n2">نحدّد معك أول لقاء لفهم الميدان.</li><li data-i="ct.n3">نرسل إليك مقترحاً مفصّلاً، مرحلة بمرحلة.</li></ol>
+          </div>
+        </div>
+        <form class="f" id="form" novalidate>
+          <div class="fld"><label for="f-name" data-i="f.name">الاسم الكامل</label><input id="f-name" name="name" type="text" autocomplete="name" required aria-describedby="e-name"><p class="err" id="e-name" aria-live="polite"></p></div>
+          <div class="fld"><label for="f-org" data-i="f.org">المؤسسة (اختياري)</label><input id="f-org" name="organisation" type="text" autocomplete="organization"></div>
+          <div class="fld"><label for="f-email" data-i="f.email">البريد الإلكتروني</label><input id="f-email" name="email" type="email" autocomplete="email" inputmode="email" dir="ltr" required aria-describedby="e-email"><p class="err" id="e-email" aria-live="polite"></p></div>
+          <div class="fld"><label for="f-topic" data-i="f.topic">الموضوع</label>
+            <select id="f-topic" name="topic">
+              <option value="education" data-i="f.t1">التعليم</option>
+              <option value="administration" data-i="f.t2">الإدارة</option>
+              <option value="association" data-i="f.t3">جمعية أو تعاونية</option>
+              <option value="company" data-i="f.t4">مقاولة</option>
+              <option value="games" data-i="f.t5">الألعاب وARDOUKH 3D</option>
+              <option value="other" data-i="f.t6">موضوع آخر</option>
+            </select></div>
+          <div class="fld full"><label for="f-msg" data-i="f.msg">رسالتك</label><textarea id="f-msg" name="message" required aria-describedby="e-msg"></textarea><p class="err" id="e-msg" aria-live="polite"></p></div>
+          <input class="hp" type="checkbox" name="botcheck" tabindex="-1" aria-hidden="true">
+          <div class="f-foot">
+            <button class="btn btn-primary" type="submit"><span data-i="f.send">أرسل الرسالة</span><svg class="arr" viewBox="0 0 20 20" fill="none" aria-hidden="true"><path d="M4 10h11m-4-5 5 5-5 5" stroke="currentColor" stroke-width="1.8" stroke-linecap="round" stroke-linejoin="round"/></svg></button>
+            <p class="status" id="status" role="status" aria-live="polite"></p>
+          </div>
+        </form>
+      </div>
+    </div>
+  </section>
+</main>
+
+<footer class="ftr">
+  <div class="wrap">
+    <div class="ftr-top">
+      <div><img src="img/saharahub-horizontal-on-dark.svg" alt="saharahub" width="160" height="30"><p data-i="ft.tag">التحول الرقمي وصناعة الألعاب، من المغرب.</p></div>
+      <div><h2 data-i="ft.site">الموقع</h2><ul>
+        <li><a href="#about" data-i="nav.about">من نحن</a></li><li><a href="#vision" data-i="nav.vision">رؤيتنا</a></li><li><a href="#goals" data-i="nav.goals">أهدافنا</a></li><li><a href="#fields" data-i="nav.fields">مجالاتنا</a></li><li><a href="#contact" data-i="ct.k">تواصل</a></li></ul></div>
+      <div><h2 data-i="ft.proj">المشاريع</h2><ul>
+        <li><a href="https://eduplay3d.lovable.app/" target="_blank" rel="noopener">EduPlay3D</a></li>
+        <li><a href="https://skilledvolunteerma1.lovable.app/" target="_blank" rel="noopener">Skilled Volunteer MA</a></li>
+        <li><a href="#work">ARDOUKH 3D</a></li></ul></div>
+    </div>
+    <div class="ftr-bot"><p data-i="ft.copy">© 2026 SAHARAHUB SARLAU. جميع الحقوق محفوظة.</p><a href="#top" data-i="ft.top">أعلى الصفحة</a></div>
+  </div>
+</footer>
+
+<script>
+/* ---------- contact form ----------
+   Messages go to the company inbox (saharahub68@gmail.com) through Web3Forms, without showing the address.
+   Create a free access key at https://web3forms.com with that email, then paste it below. */
+const FORM = { endpoint: "https://api.web3forms.com/submit", accessKey: "YOUR_WEB3FORMS_ACCESS_KEY", subject: "Nouvelle demande — site SAHARAHUB" };
+
+const I18N = {"meta.title":["SAHARAHUB — التحول الرقمي وصناعة الألعاب ثلاثية الأبعاد في المغرب","SAHARAHUB — Transformation digitale et jeux 3D, conçus au Maroc","SAHARAHUB — Digital transformation and 3D games, made in Morocco"],"meta.desc":["SAHARAHUB SARLAU شركة مغربية تصمّم المنصات الرقمية وأنظمة التدبير والألعاب ثلاثية الأبعاد للتعليم والإدارة والمجتمع المدني. 31 شريكاً.","SAHARAHUB SARLAU conçoit des plateformes numériques, des systèmes de gestion et des jeux 3D pour l'éducation, l'administration et la société civile au Maroc. 31 partenaires.","SAHARAHUB SARLAU designs digital platforms, management systems and 3D games for education, administration and civil society in Morocco. 31 partners."],"skip":["انتقل إلى المحتوى","Aller au contenu","Skip to content"],"home":["SAHARAHUB، العودة إلى أعلى الصفحة","SAHARAHUB, retour en haut de page","SAHARAHUB, back to top"],"nav.label":["التنقل الرئيسي","Navigation principale","Main navigation"],"nav.about":["من نحن","À propos","About"],"nav.vision":["رؤيتنا","Vision","Vision"],"nav.goals":["أهدافنا","Objectifs","Goals"],"nav.fields":["مجالاتنا","Métiers","What we do"],"nav.work":["مشاريعنا","Projets","Projects"],"nav.menu":["فتح القائمة","Ouvrir le menu","Open menu"],"nav.lang":["اللغة","Langue","Language"],"cta.talk":["حدّثنا عن مشروعك","Parler de votre projet","Discuss your project"],"cta.work":["اكتشف مشاريعنا","Voir nos projets","See our projects"],"motion.pause":["إيقاف الحركة","Mettre en pause","Pause motion"],"motion.play":["تشغيل الحركة","Relancer","Play motion"],"hero.k":["التحول الرقمي · صناعة الألعاب · المغرب","Transformation digitale · Jeux vidéo · Maroc","Digital transformation · Video games · Morocco"],"hero.h1":["منصات رقمية وألعاب ثلاثية الأبعاد، صُنعت في المغرب.","Plateformes numériques et jeux 3D, conçus au Maroc.","Digital platforms and 3D games, made in Morocco."],"hero.sub":["SAHARAHUB SARLAU شركة مغربية ناشئة للتحول الرقمي وصناعة الألعاب. نبني للمدارس والإدارات والجمعيات والتعاونيات أدوات تُستعمل كل يوم.","SAHARAHUB SARLAU est une startup marocaine de transformation digitale et de création de jeux. Nous construisons pour les écoles, les administrations, les associations et les coopératives des outils utilisés chaque jour.","SAHARAHUB SARLAU is a Moroccan startup in digital transformation and game development. We build tools that schools, administrations, associations and cooperatives use every day."],"st.1":["شريكاً","partenaires","partners"],"st.2":["منصتان على الإنترنت","plateformes en ligne","platforms live"],"st.3":["لعبة فيديو قيد التطوير","jeu vidéo en développement","video game in development"],"about.k":["من نحن","À propos","About us"],"about.h":["شركة مغربية ناشئة تحوّل حاجات الميدان إلى أدوات رقمية.","Une startup marocaine qui transforme les besoins du terrain en outils numériques.","A Moroccan startup turning needs on the ground into digital tools."],"about.p1":["تعمل SAHARAHUB في مجالين يكمّل أحدهما الآخر: التحول الرقمي للتعليم والإدارة والاقتصاد الاجتماعي، وصناعة الألعاب التعليمية وألعاب الفيديو ثلاثية الأبعاد. نصمّم منتجاتنا ونطوّرها بأنفسنا، من الفكرة إلى الإطلاق.","SAHARAHUB travaille sur deux métiers qui se répondent : la transformation digitale de l'éducation, de l'administration et de l'économie sociale, et la création de jeux éducatifs et de jeux vidéo en 3D. Nous concevons et développons nos produits nous-mêmes, de l'idée au lancement.","SAHARAHUB works in two fields that feed each other: digital transformation for education, administration and the social economy, and the making of educational games and 3D video games. We design and build our products ourselves, from idea to launch."],"about.p2":["في شعارنا كثيبان يرسمان حرف S: الصحراء تبقى ممتلئة، والرقمي يتحوّل إلى خطوط بيانات. هذا عملنا: ننطلق من الواقع ونحوّله إلى رقمي.","Notre logo montre deux dunes qui forment un S : le Sahara reste plein, le numérique se dissout en lignes de données. C'est notre métier : partir du réel et le rendre numérique.","Our logo shows two dunes forming an S: the Sahara stays solid while the digital half dissolves into data lines. That is the job: start from the real world and make it digital."],"part.h":["شريكاً يعملون معنا","partenaires travaillent avec nous","partners work with us"],"part.1":["مؤسسات تعليمية","Établissements d'enseignement","Schools"],"part.2":["جمعيات","Associations","Associations"],"part.3":["مقاولات","Entreprises","Companies"],"part.4":["تعاونيات","Coopératives","Cooperatives"],"why.k":["لماذا","Pourquoi","Why"],"why.h":["لماذا أسّسنا SAHARAHUB","Pourquoi SAHARAHUB existe","Why we started SAHARAHUB"],"why.p":["لأن أربع فجوات ما زالت قائمة حولنا، ونبني جواباً لكل واحدة منها.","Parce que quatre manques persistent autour de nous, et que nous construisons une réponse à chacun.","Because four gaps remain around us, and we are building an answer to each one."],"why.gap":["الواقع","Le constat","The gap"],"why.ans":["جوابنا","Notre réponse","Our answer"],"why1.gap":["كثير من التلاميذ يحفظون الدروس العلمية دون أن يفهموها.","Beaucoup d'élèves apprennent les sciences par cœur sans les comprendre.","Many pupils memorise science lessons without understanding them."],"why1.ans":["مختبرات تفاعلية ثلاثية الأبعاد بالعربية، يجرّب فيها التلميذ ويقيس بنفسه.","Des laboratoires 3D interactifs en arabe, où l'élève manipule et mesure lui-même.","Interactive 3D labs in Arabic, where pupils handle and measure things themselves."],"why2.gap":["ما زالت مؤسسات وإدارات كثيرة تدبّر الملفات والطلبات على الورق.","Beaucoup d'établissements et d'administrations gèrent encore dossiers et demandes sur papier.","Many schools and administrations still handle files and requests on paper."],"why2.ans":["أنظمة تدبير وخدمات إلكترونية تجمع الملفات والطلبات والمؤشرات في أداة واحدة.","Des systèmes de gestion et des e-services qui réunissent dossiers, demandes et indicateurs dans un seul outil.","Management systems and e-services that bring files, requests and indicators into one tool."],"why2.tag":["أنظمة التدبير","Systèmes de gestion","Management systems"],"why3.gap":["تحتاج الجمعيات والتعاونيات إلى كفاءات لا تجدها بسهولة.","Les associations et les coopératives ont besoin de compétences qu'elles trouvent difficilement.","Associations and cooperatives need skills they rarely find."],"why3.ans":["منصة تربط المتطوعات والمتطوعين أصحاب الكفاءات بالجمعيات والتعاونيات والمقاولات.","Une plateforme qui relie bénévoles qualifiés, associations, coopératives et entreprises.","A platform that connects skilled volunteers with associations, cooperatives and companies."],"why4.gap":["معظم الألعاب التي يلعبها الشباب المغربي صُمّمت خارج المغرب.","La plupart des jeux auxquels jouent les jeunes Marocains sont conçus à l'étranger.","Most games young Moroccans play are designed abroad."],"why4.ans":["استوديو ألعاب مغربي، يبدأ بلعبة الفيديو ARDOUKH 3D.","Un studio de jeux marocain, qui commence avec le jeu vidéo ARDOUKH 3D.","A Moroccan game studio, starting with the video game ARDOUKH 3D."],"vis.k":["رؤيتنا","Notre vision","Our vision"],"vis.h":["أن يتعلّم جيلٌ كامل ويعمل ويلعب بأدوات رقمية صُنعت في المغرب، من الصحراء إلى كل جهات المملكة.","Qu'une génération entière apprenne, travaille et joue avec des outils numériques conçus au Maroc, du Sahara à toutes les régions du Royaume.","A whole generation learning, working and playing with digital tools made in Morocco, from the Sahara to every region of the Kingdom."],"mis.k":["رسالتنا","Notre mission","Our mission"],"mis.p":["نصمّم ونطوّر منصات وأنظمة وألعاباً سهلة الاستعمال، بالعربية والفرنسية والإنجليزية، تخدم المدرسة والإدارة والمجتمع المدني.","Concevoir et développer des plateformes, des systèmes et des jeux simples à utiliser, en arabe, en français et en anglais, au service de l'école, de l'administration et de la société civile.","We design and build platforms, systems and games that are easy to use, in Arabic, French and English, for schools, administrations and civil society."],"goals.k":["أهدافنا","Nos objectifs","Our goals"],"goals.h":["خمسة أهداف للسنوات القادمة","Cinq objectifs pour les années à venir","Five goals for the years ahead"],"g1.t":["التعليم","Éducation","Education"],"g1.p":["رقمنة الدروس العلمية بمختبرات ثلاثية الأبعاد بالعربية، متوافقة مع المقرر المغربي.","Numériser les cours de sciences avec des laboratoires 3D en arabe, alignés sur le programme marocain.","Bring science lessons online with 3D labs in Arabic, aligned with the Moroccan curriculum."],"g2.t":["الإدارة","Administration","Administration"],"g2.p":["تعويض الورق في المؤسسات التعليمية والإدارات بأنظمة تدبير وخدمات إلكترونية.","Remplacer le papier dans les établissements et les administrations par des systèmes de gestion et des e-services.","Replace paper in schools and administrations with management systems and e-services."],"g3.t":["المجتمع المدني","Société civile","Civil society"],"g3.p":["ربط الشباب أصحاب الكفاءات بالجمعيات والتعاونيات والمقاولات عبر التطوع.","Relier les jeunes qualifiés aux associations, coopératives et entreprises par le bénévolat.","Connect skilled young people with associations, cooperatives and companies through volunteering."],"g4.t":["ألعاب الفيديو","Jeux vidéo","Video games"],"g4.p":["إطلاق ARDOUKH 3D، أول لعبة فيديو ثلاثية الأبعاد من إنتاج SAHARAHUB.","Lancer ARDOUKH 3D, le premier jeu vidéo en 3D produit par SAHARAHUB.","Launch ARDOUKH 3D, the first 3D video game produced by SAHARAHUB."],"g5.t":["التسويق الرقمي","Marketing digital","Digital marketing"],"g5.p":["مساعدة التعاونيات والمقاولات الصغيرة على الظهور والبيع عبر الإنترنت.","Aider les coopératives et les petites entreprises à se faire connaître et à vendre en ligne.","Help cooperatives and small businesses get seen and sell online."],"fields.k":["مجالاتنا","Nos métiers","What we do"],"fields.h":["مجالان، وفريق واحد","Deux métiers, une seule équipe","Two fields, one team"],"f1.t":["التحول الرقمي","Transformation digitale","Digital transformation"],"f1.p":["نرقمن الخدمات والتدبير والتواصل للمؤسسات والجمعيات والمقاولات.","Nous numérisons les services, la gestion et la communication des établissements, des associations et des entreprises.","We digitise services, management and communication for schools, associations and companies."],"f1.i1":["أنظمة التدبير والخدمات الإلكترونية","Systèmes de gestion et e-services","Management systems and e-services"],"f1.i2":["المنصات الاجتماعية","Plateformes sociales","Social platforms"],"f1.i3":["التسويق الرقمي","Marketing digital","Digital marketing"],"f2.t":["صناعة الألعاب","Création de jeux","Game development"],"f2.p":["نصنع ألعاباً تعليمية وتجارب تفاعلية ثلاثية الأبعاد وألعاب فيديو.","Nous créons des jeux éducatifs, des expériences 3D interactives et des jeux vidéo.","We make educational games, interactive 3D experiences and video games."],"f2.i1":["الألعاب التعليمية","Jeux éducatifs","Educational games"],"f2.i2":["تجارب تفاعلية ثلاثية الأبعاد","Expériences 3D interactives","Interactive 3D experiences"],"f2.i3":["ألعاب الفيديو","Jeux vidéo","Video games"],"ui.space":["فضاء المؤسسة","Espace établissement","School workspace"],"ui.req":["طلبات اليوم","Demandes du jour","Today's requests"],"ui.r1":["شهادة مدرسية","Certificat de scolarité","School certificate"],"ui.r2":["تسجيل عبر الإنترنت","Inscription en ligne","Online enrolment"],"ui.r3":["طلب انتقال","Demande de transfert","Transfer request"],"ui.s1":["جديد","Nouveau","New"],"ui.s2":["قيد المعالجة","En cours","In progress"],"ui.s3":["معالَج","Traité","Done"],"ui.lab":["مختبر: طبقات الأرض","Labo : les couches de la Terre","Lab: Earth's layers"],"ui.lvl":["المستوى 3","Niveau 3","Level 3"],"ui.l1":["القشرة","Croûte","Crust"],"ui.l2":["الوشاح","Manteau","Mantle"],"ui.l3":["النواة الخارجية","Noyau externe","Outer core"],"ui.l4":["النواة الداخلية","Noyau interne","Inner core"],"work.k":["مشاريعنا","Projets","Projects"],"work.h":["ثلاثة مشاريع من إنتاج SAHARAHUB","Trois projets signés SAHARAHUB","Three projects by SAHARAHUB"],"p1.tag":["منصة تعليمية ثلاثية الأبعاد","Plateforme éducative 3D","3D learning platform"],"p1.st":["نسخة تجريبية","Version d'essai","Trial version"],"p1.p":["10 مختبرات علمية تفاعلية بالعربية لتلاميذ الابتدائي والإعدادي، تعمل في المتصفح دون تثبيت.","10 laboratoires scientifiques interactifs en arabe pour le primaire et le collège, dans le navigateur, sans installation.","10 interactive science labs in Arabic for primary and middle school, in the browser, with nothing to install."],"p1.cta":["زيارة EduPlay3D","Visiter EduPlay3D","Visit EduPlay3D"],"p1.aria":["زيارة EduPlay3D (يفتح في علامة تبويب جديدة)","Visiter EduPlay3D (nouvel onglet)","Visit EduPlay3D (opens in a new tab)"],"p2.tag":["منصة التطوع بالكفاءات","Bénévolat de compétences","Skills-based volunteering"],"p2.st":["على الإنترنت","En ligne","Live"],"p2.p":["منصة مغربية تربط المتطوعات والمتطوعين بالجمعيات والتعاونيات والمقاولات، بالعربية والفرنسية والإنجليزية.","Une plateforme marocaine qui relie bénévoles, associations, coopératives et entreprises, en arabe, en français et en anglais.","A Moroccan platform linking volunteers with associations, cooperatives and companies, in Arabic, French and English."],"p2.cta":["زيارة Skilled Volunteer MA","Visiter Skilled Volunteer MA","Visit Skilled Volunteer MA"],"p2.aria":["زيارة Skilled Volunteer MA (يفتح في علامة تبويب جديدة)","Visiter Skilled Volunteer MA (nouvel onglet)","Visit Skilled Volunteer MA (opens in a new tab)"],"p3.tag":["لعبة فيديو ثلاثية الأبعاد","Jeu vidéo 3D","3D video game"],"p3.st":["قريباً","Bientôt","Coming soon"],"p3.p":["أول لعبة فيديو من استوديو SAHARAHUB، قيد التطوير حالياً.","Le premier jeu vidéo du studio SAHARAHUB, actuellement en développement.","The first video game from the SAHARAHUB studio, now in development."],"p3.cta":["أخبروني عند الإطلاق","Me prévenir à la sortie","Tell me at launch"],"ct.k":["تواصل","Contact","Contact"],"ct.h":["لنتحدّث عن مشروعك","Parlons de votre projet","Let's talk about your project"],"ct.p":["مدرسة أو إدارة أو جمعية أو تعاونية أو مقاولة؟ صِف حاجتك في بضعة أسطر، وسنجيبك عبر البريد الإلكتروني.","École, administration, association, coopérative ou entreprise ? Décrivez votre besoin en quelques lignes, nous vous répondons par e-mail.","A school, administration, association, cooperative or company? Describe what you need in a few lines and we will reply by email."],"ct.next":["بعد رسالتك","Après votre message","After your message"],"ct.n1":["نقرأ حاجتك ونجيبك عبر البريد الإلكتروني.","Nous lisons votre besoin et vous répondons par e-mail.","We read your request and reply by email."],"ct.n2":["نحدّد معك أول لقاء لفهم الميدان.","Nous fixons un premier échange pour comprendre le terrain.","We set up a first call to understand your context."],"ct.n3":["نرسل إليك مقترحاً مفصّلاً، مرحلة بمرحلة.","Nous vous envoyons une proposition détaillée, étape par étape.","We send you a detailed proposal, step by step."],"f.name":["الاسم الكامل","Nom complet","Full name"],"f.org":["المؤسسة (اختياري)","Organisme (facultatif)","Organisation (optional)"],"f.email":["البريد الإلكتروني","E-mail","Email"],"f.topic":["الموضوع","Sujet","Topic"],"f.t1":["التعليم","Éducation","Education"],"f.t2":["الإدارة","Administration","Administration"],"f.t3":["جمعية أو تعاونية","Association ou coopérative","Association or cooperative"],"f.t4":["مقاولة","Entreprise","Company"],"f.t5":["الألعاب وARDOUKH 3D","Jeux et ARDOUKH 3D","Games and ARDOUKH 3D"],"f.t6":["موضوع آخر","Autre sujet","Something else"],"f.msg":["رسالتك","Votre message","Your message"],"f.send":["أرسل الرسالة","Envoyer le message","Send the message"],"f.sending":["جارٍ الإرسال…","Envoi…","Sending…"],"f.ok":["شكراً، وصلتنا رسالتك. سنجيبك عبر البريد الإلكتروني.","Merci, votre message est bien parti. Nous vous répondons par e-mail.","Thank you, your message is on its way. We will reply by email."],"f.err":["تعذّر الإرسال. حاول مرة أخرى بعد لحظات.","L'envoi a échoué. Réessayez dans un instant.","Sending failed. Please try again in a moment."],"f.setup":["النموذج قيد الإعداد، وسيعمل قريباً.","Le formulaire est en cours de configuration et fonctionnera bientôt.","The form is being set up and will work soon."],"f.req":["هذا الحقل مطلوب.","Ce champ est requis.","This field is required."],"f.bad":["أدخل بريداً إلكترونياً صالحاً.","Saisissez une adresse e-mail valide.","Enter a valid email address."],"ft.tag":["التحول الرقمي وصناعة الألعاب، من المغرب.","Transformation digitale et jeux, conçus au Maroc.","Digital transformation and games, made in Morocco."],"ft.site":["الموقع","Le site","Site"],"ft.proj":["المشاريع","Projets","Projects"],"ft.copy":["© 2026 SAHARAHUB SARLAU. جميع الحقوق محفوظة.","© 2026 SAHARAHUB SARLAU. Tous droits réservés.","© 2026 SAHARAHUB SARLAU. All rights reserved."],"ft.top":["أعلى الصفحة","Haut de page","Back to top"],"go.k":["الهدف","Objectif","Goal"],"go.rail":["مسار الأهداف الخمسة","Parcours des cinq objectifs","Five-goal timeline"],"go.show":["اعرضه على الشعار","L'afficher sur le logo","Show it on the logo"],"tf.k":["التحول الرقمي","Transformation digitale","Digital transformation"],"tf.h":["من الورق إلى البيانات","Du papier aux données","From paper to data"],"tf.p":["نحوّل الاستمارات والملفات والدروس الورقية إلى خدمات رقمية: المعلومة نفسها، تُعالَج أسرع وتُتابَع بسهولة.","Nous transformons formulaires, dossiers et cours papier en services numériques : la même information, traitée plus vite et suivie plus facilement.","We turn paper forms, files and lessons into digital services: the same information, processed faster and easier to follow."],"tf.badge":["الرقمنة","Numérisation","Digitised"],"tf.fields":["حقول","champs","fields"],"tf.hint":["اسحب الشريط إلى اليمين لتعيد الورقة كما كانت.","Faites glisser la bande vers la droite pour reconstruire le papier.","Drag the belt to the right to rebuild the paper."],"gm.k":["صناعة الألعاب","Création de jeux","Game development"],"gm.h":["شخصيات وعوالم ثلاثية الأبعاد تعمل في المتصفح","Des personnages et des mondes 3D qui tournent dans le navigateur","3D characters and worlds that run in the browser"],"gm.p":["هذه الشخصية مبنية بالكود فقط وتعمل الآن في صفحتك: حرّك المؤشر وستلتفت إليك، وانزل لترى وجهها عن قرب. بالروح نفسها نصنع مختبرات EduPlay3D التفاعلية.","Ce personnage est construit uniquement en code et tourne en direct dans votre page : bougez le curseur, il vous suit du regard ; descendez pour voir son visage de près. Le même esprit anime les laboratoires interactifs d'EduPlay3D.","This character is built only in code and runs live in your page: move your cursor and it turns to look, scroll down to see its face up close. The same spirit drives the interactive labs of EduPlay3D."],"gm.strip":["مختبرات EduPlay3D","Les labos d'EduPlay3D","EduPlay3D labs"],"lab1":["طبقات الأرض","Les couches de la Terre","Earth's layers"],"lab2":["القلب","Le cœur","The heart"],"lab3":["قانون أوم","La loi d'Ohm","Ohm's law"],"lab4":["الطائرة المسيّرة","Le drone","The drone"],"lab5":["الدورة الدموية","La circulation sanguine","Blood circulation"],"lab6":["حركة المقذوفات","Le mouvement des projectiles","Projectile motion"],"ct.ex1":["نريد رقمنة طلبات التسجيل في مؤسستنا التعليمية.","Nous voulons numériser les inscriptions de notre établissement.","We want to digitise enrolments at our school."],"ct.ex2":["نبحث عن لعبة تعليمية حول الدورة الدموية لتلاميذ الإعدادي.","Nous cherchons un jeu éducatif sur la circulation sanguine pour le collège.","We are looking for an educational game about blood circulation for middle school."],"ct.ex3":["جمعيتنا تحتاج منصة لتنظيم المتطوعين والمهام.","Notre association a besoin d'une plateforme pour organiser ses bénévoles.","Our association needs a platform to organise its volunteers."],"ct.ex4":["تعاونيتنا تريد متجراً على الإنترنت وحملة على الشبكات الاجتماعية.","Notre coopérative veut une boutique en ligne et une campagne sur les réseaux sociaux.","Our cooperative wants an online shop and a social media campaign."],"cd1.k":["مؤسسة تعليمية","Établissement scolaire","School"],"cd1.t":["شهادة مدرسية","Certificat de scolarité","School certificate"],"cd1.f1":["الاسم الكامل","Nom complet","Full name"],"cd1.f2":["المستوى","Niveau","Level"],"cd1.v2":["الثالثة إعدادي","3e année collège","Year 9"],"cd1.f3":["السنة الدراسية","Année scolaire","School year"],"cd1.stamp":["ختم المؤسسة","Cachet","Stamp"],"cd2.t":["استمارة التسجيل","Fiche d'inscription","Enrolment form"],"cd2.o1":["الابتدائي","Primaire","Primary"],"cd2.o2":["الإعدادي","Collège","Middle school"],"cd2.o3":["التأهيلي","Lycée","High school"],"cd2.f1":["اسم التلميذ","Nom de l'élève","Pupil's name"],"cd2.f2":["تاريخ الازدياد","Date de naissance","Date of birth"],"cd2.f3":["توقيع وليّ الأمر","Signature du parent","Parent's signature"],"cd3.k":["علوم · الدرس 3","Sciences · Leçon 3","Science · Lesson 3"],"cd3.ex":["تمرين: سمِّ الطبقات الأربع.","Exercice : nomme les quatre couches.","Exercise: name the four layers."],"cd4.k":["جمعية محلية","Association locale","Local association"],"cd4.t":["نبحث عن متطوعين","On cherche des bénévoles","Volunteers wanted"],"cd4.s1":["تصميم","Design","Design"],"cd4.s2":["تكوين","Formation","Training"],"cd4.s3":["محاسبة","Comptabilité","Accounting"],"cd5.k":["منتج تعاونية","Produit de coopérative","Cooperative product"],"cd5.t":["تمور الواحة","Dattes de l'oasis","Oasis dates"],"cd5.w":["1 كلغ","1 kg","1 kg"],"cd6.t":["المستوى 1","Niveau 1","Level 1"],"cd6.k":["رسم أوّلي","Croquis","Sketch"]};
+const LANGS = ["ar","fr","en"];
+let LANG = window.__LANG || "ar";
+const t = k => { const v = I18N[k]; return v ? (v[LANGS.indexOf(LANG)] || v[1]) : ""; };
+
+/* ---------- the data each paper becomes (belt section) ---------- */
+function codeData(){
+  return [
+    {type:"school_certificate", school:t("cd1.k"), student:"…", level:t("cd1.v2"), year:"2026/2027", stamped:true, status:"issued"},
+    {type:"enrolment", level:"middle_school", pupil:"…", birth_date:"…", guardian_signed:true, status:"received"},
+    {type:"3d_lab", lab:"earth_layers", title:t("lab1"), layers:["crust","mantle","outer_core","inner_core"], actions:["rotate","cut","measure"], language:LANG},
+    {type:"volunteer_mission", host:t("cd4.k"), title:t("cd4.t"), skills:[t("cd4.s1"),t("cd4.s2"),t("cd4.s3")], status:"open"},
+    {type:"product", name:t("cd5.t"), weight:"1 kg", producer:t("cd5.k"), channels:["online_shop","social_media"], status:"published"},
+    {type:"game_level", level:1, terrain:"dunes", items:["coin","coin","coin","flag"], spawn:[1,2], status:"playable"}
+  ];
+}
+const CODE_TITLES = ["cd1.t","cd2.t","lab1","cd4.t","cd5.t","cd6.t"];
+function renderCodes(){
+  const esc = v => String(v).replace(/&/g,"&amp;").replace(/</g,"&lt;");
+  const val = v => typeof v === "string" ? '<span class="s">"' + esc(v) + '"</span>' : Array.isArray(v) ? "[" + v.map(val).join(", ") + "]" : '<span class="n">' + esc(v) + "</span>";
+  codeData().forEach((d, i) => {
+    const el = document.querySelector('.code[data-c="' + i + '"]'); if (!el) return;
+    const keys = Object.keys(d);
+    const body = keys.map((k, j) => '  <span class="k">"' + k + '"</span>: ' + val(d[k]) + (j < keys.length - 1 ? "," : "")).join("\n");
+    el.dataset.n = keys.length;
+    el.innerHTML = '<div><span class="c">// ' + esc(t(CODE_TITLES[i])) + "</span>\n{\n" + body + '\n}\n<span class="c">// ' + keys.length + " " + esc(t("tf.fields")) + " · json</span></div>";
+  });
+}
+
+function applyLang(l){
+  LANG = LANGS.includes(l) ? l : "ar";
+  const h = document.documentElement;
+  h.lang = LANG; h.dir = LANG === "ar" ? "rtl" : "ltr";
+  document.querySelectorAll("[data-i]").forEach(el => { el.textContent = t(el.dataset.i); });
+  document.querySelectorAll("[data-ia]").forEach(el => el.setAttribute("aria-label", t(el.dataset.ia)));
+  document.querySelectorAll("[data-ic]").forEach(el => el.setAttribute("content", t(el.dataset.ic)));
+  document.querySelectorAll("[data-isplit]").forEach(el => {
+    el.innerHTML = t(el.dataset.isplit).split(/\s+/).map(w => '<span class="w">' + w.replace(/&/g,"&amp;").replace(/</g,"&lt;") + '</span>').join(" ");
+  });
+  document.querySelectorAll("[data-lang]").forEach(b => b.setAttribute("aria-pressed", String(b.dataset.lang === LANG)));
+  document.querySelectorAll(".err").forEach(e => { if (e.dataset.key) e.textContent = t(e.dataset.key); });
+  const st = document.getElementById("status"); if (st.dataset.key) st.textContent = t(st.dataset.key);
+  setMotionLabel();
+  renderCodes();
+  if (window.__tabs) window.__tabs();
+  if (window.__typing) window.__typing();
+  if (window.__goals) window.__goals.kick();
+  if (window.__belt) window.__belt.kick();
+  if (window.__robot) window.__robot.kick();
+  try { localStorage.setItem("sh-lang", LANG); } catch(e) {}
+  if (window.__vision) window.__vision();
+  if (window.__hero) window.__hero.resize();
+}
+document.querySelectorAll("[data-lang]").forEach(b => b.addEventListener("click", () => applyLang(b.dataset.lang)));
+
+/* ---------- motion: global pause ---------- */
+const root = document.documentElement;
+const mts = [...document.querySelectorAll(".motion-toggle")];
+function setMotionLabel(){
+  const p = root.classList.contains("paused");
+  mts.forEach(b => { b.setAttribute("aria-pressed", String(p)); b.querySelector(".mt-label").textContent = t(p ? "motion.play" : "motion.pause"); });
+}
+mts.forEach(b => b.addEventListener("click", () => {
+  root.classList.toggle("paused");
+  setMotionLabel();
+  ["__hero","__goals","__belt","__robot"].forEach(k => window[k] && window[k].kick());
+}));
+
+applyLang(LANG);
+root.classList.remove("i18n-pending");
+requestAnimationFrame(() => requestAnimationFrame(() => root.classList.add("entered")));
+
+/* ---------- header + mobile menu ---------- */
+const hdr = document.querySelector(".hdr");
+const onScroll = () => hdr.classList.toggle("scrolled", window.scrollY > 8);
+window.addEventListener("scroll", onScroll, { passive: true }); onScroll();
+const mbtn = document.querySelector(".menu-btn"), mnav = document.getElementById("mnav");
+function setMenu(open){ mbtn.setAttribute("aria-expanded", String(open)); mnav.classList.toggle("open", open); document.body.style.overflow = open ? "hidden" : ""; }
+mbtn.addEventListener("click", () => setMenu(mbtn.getAttribute("aria-expanded") !== "true"));
+mnav.querySelectorAll("a").forEach(a => a.addEventListener("click", () => setMenu(false)));
+document.addEventListener("keydown", e => { if (e.key === "Escape" && mnav.classList.contains("open")) { setMenu(false); mbtn.focus(); } });
+window.addEventListener("resize", () => { if (window.innerWidth > 1080 && mnav.classList.contains("open")) setMenu(false); });
+
+/* current section in the nav */
+const navLinks = [...document.querySelectorAll(".nav a")];
+const io = new IntersectionObserver(es => es.forEach(e => {
+  if (e.isIntersecting) navLinks.forEach(a => a.setAttribute("aria-current", String(a.getAttribute("href") === "#" + e.target.id)));
+}), { rootMargin: "-45% 0px -50% 0px" });
+document.querySelectorAll("main>section[id]").forEach(s => io.observe(s));
+
+/* ARDOUKH card → contact with the games topic */
+document.querySelectorAll("[data-topic]").forEach(a => a.addEventListener("click", () => { document.getElementById("f-topic").value = a.dataset.topic; }));
+
+/* ---------- moment: the vision lights up word by word as its section comes in ---------- */
+(function(){
+  const sec = document.getElementById("vision");
+  let ticking = false;
+  function update(){
+    ticking = false;
+    const words = sec.querySelectorAll(".vision-statement .w");
+    if (root.classList.contains("rm")) { words.forEach(w => w.classList.add("on")); return; }
+    const r = sec.getBoundingClientRect(), vh = window.innerHeight;
+    const p = Math.min(1, Math.max(0, (vh * 0.9 - r.top) / (vh * 0.65)));
+    const n = Math.round(p * words.length);
+    words.forEach((w, i) => w.classList.toggle("on", i < n));
+  }
+  window.__vision = update;
+  window.addEventListener("scroll", () => { if (!ticking) { ticking = true; requestAnimationFrame(update); } }, { passive: true });
+  window.addEventListener("resize", update);
+  update();
+})();
+
+/* ---------- the one effect: "data dunes" WebGL ground in the hero ---------- */
+(function(){
+  const hero = document.querySelector(".hero"), cv = hero.querySelector(".hero-gl"), art = hero.querySelector(".hero-art");
+  let gl = null;
+  try { gl = cv.getContext("webgl", { antialias: false, premultipliedAlpha: false, alpha: false }); } catch(e) {}
+  if (!gl) { root.classList.add("no-gl"); return; }
+  const vs = "attribute vec2 p;void main(){gl_Position=vec4(p,0.,1.);}";
+  const fs = `precision highp float;
+uniform vec2 u_c;uniform float u_r;uniform float u_t;uniform vec2 u_res;
+float h21(vec2 p){p=fract(p*vec2(123.34,456.21));p+=dot(p,p+45.32);return fract(p.x*p.y);}
+float n21(vec2 p){vec2 i=floor(p),f=fract(p);f=f*f*(3.-2.*f);return mix(mix(h21(i),h21(i+vec2(1.,0.)),f.x),mix(h21(i+vec2(0.,1.)),h21(i+vec2(1.,1.)),f.x),f.y);}
+void main(){
+  vec2 px=gl_FragCoord.xy; float R=u_r; vec2 q=px-u_c;
+  vec3 night=vec3(.043,.063,.149), blue=vec3(.431,.525,1.), orange=vec3(1.,.478,.188);
+  vec3 col=night;
+  /* sky: faint stars, fading towards the ground */
+  vec2 cell=floor(px/46.); vec2 sp=(cell+vec2(h21(cell),h21(cell+7.1)))*46.;
+  float sh=h21(cell+3.3); float sd=length(px-sp);
+  float star=step(.9,sh)*(1.-smoothstep(.4,1.6,sd))*(.35+.25*sin(u_t*1.1+sh*60.));
+  col+=vec3(.75,.8,1.)*star*smoothstep(.15,.6,px.y/u_res.y);
+  /* soft glow behind the dunes */
+  float g=length((q-vec2(-.2*R,.25*R))/(1.9*R)); col+=vec3(.23,.36,1.)*.13*exp(-g*g*2.2);
+  /* the Sahara: full orange half-disc */
+  vec2 qo=q-vec2(.5*R,-.079*R); float dO=length(qo);
+  float inO=(1.-smoothstep(R-1.,R+1.,dO))*(1.-smoothstep(-1.,1.,qo.y));
+  col=mix(col,orange,inO);
+  /* the digital: lines that rise, thin out and dissolve into data */
+  vec2 qb=q-vec2(-.5*R,.079*R); float s=qb.y/R; float dB=length(qb)/R;
+  if(s>0.){
+    float a=.39,b=.30,gp=.072; float sc=min(s,1.); float P=a-b*sc;
+    float w=log(a/P)/b + max(s-1.,0.)/(a-b);
+    float ph=u_t*.085; float f=fract(w-ph);
+    float duty=clamp(1.-gp/P,.16,.9);
+    float aa=1.4/(P*R);
+    float ln=smoothstep(0.,aa,f)*(1.-smoothstep(duty-aa,duty,f));
+    float k=floor(w-ph);
+    float inD=1.-smoothstep(1.-1.2/R,1.+1.2/R,dB);
+    float dash=step(.52,n21(vec2(qb.x/R*16.+k*1.7,k*3.1)));
+    float halo=smoothstep(1.,1.02,dB)*(1.-smoothstep(1.,1.55,dB))*smoothstep(.45,.85,s);
+    float topd=mix(1.,dash,smoothstep(.72,1.,s)*.85);
+    float m=ln*(inD*topd+halo*dash*.75);
+    col=mix(col,blue,clamp(m,0.,1.));
+  }
+  gl_FragColor=vec4(col,1.);
+}`;
+  function sh(type, src){ const s = gl.createShader(type); gl.shaderSource(s, src); gl.compileShader(s); if (!gl.getShaderParameter(s, gl.COMPILE_STATUS)) { console.warn(gl.getShaderInfoLog(s)); return null; } return s; }
+  const v = sh(gl.VERTEX_SHADER, vs), f = sh(gl.FRAGMENT_SHADER, fs);
+  if (!v || !f) { root.classList.add("no-gl"); return; }
+  const pr = gl.createProgram(); gl.attachShader(pr, v); gl.attachShader(pr, f); gl.linkProgram(pr);
+  if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) { root.classList.add("no-gl"); return; }
+  gl.useProgram(pr);
+  const buf = gl.createBuffer(); gl.bindBuffer(gl.ARRAY_BUFFER, buf);
+  gl.bufferData(gl.ARRAY_BUFFER, new Float32Array([-1,-1, 3,-1, -1,3]), gl.STATIC_DRAW);
+  const loc = gl.getAttribLocation(pr, "p"); gl.enableVertexAttribArray(loc); gl.vertexAttribPointer(loc, 2, gl.FLOAT, false, 0, 0);
+  const U = n => gl.getUniformLocation(pr, n);
+  const uC = U("u_c"), uR = U("u_r"), uT = U("u_t"), uRes = U("u_res");
+  let dpr = 1, visible = true, raf = 0, t0 = performance.now(), tPaused = 0, last = 0;
+  function resize(){
+    dpr = Math.min(window.devicePixelRatio || 1, 1.5);
+    const w = hero.clientWidth, h = hero.clientHeight;
+    cv.width = Math.round(w * dpr); cv.height = Math.round(h * dpr);
+    gl.viewport(0, 0, cv.width, cv.height);
+    const hr = hero.getBoundingClientRect(), ar = art.getBoundingClientRect();
+    const R = Math.min(ar.width / 3.1, ar.height / 2.5);
+    const cx = ar.left - hr.left + ar.width / 2, cy = ar.top - hr.top + ar.height / 2 + R * 0.18;
+    gl.uniform2f(uC, cx * dpr, (h - cy) * dpr); gl.uniform1f(uR, R * dpr); gl.uniform2f(uRes, cv.width, cv.height);
+    draw(last);
+  }
+  function draw(time){ gl.uniform1f(uT, time); gl.drawArrays(gl.TRIANGLES, 0, 3); }
+  function frame(now){
+    raf = 0;
+    if (root.classList.contains("paused") || root.classList.contains("rm") || !visible) return;
+    last = (now - t0) / 1000; draw(last);
+    raf = requestAnimationFrame(frame);
+  }
+  function kick(){ if (!raf && visible && !root.classList.contains("paused") && !root.classList.contains("rm")) { t0 = performance.now() - last * 1000; raf = requestAnimationFrame(frame); } }
+  new IntersectionObserver(es => { visible = es[0].isIntersecting; kick(); }).observe(hero);
+  window.addEventListener("resize", resize);
+  if (document.fonts && document.fonts.ready) document.fonts.ready.then(resize);
+  window.__hero = { resize, kick };
+  last = 6.0; resize(); kick();
+})();
+
+/* =====================================================================
+   Mini 3D engine (plain WebGL, no library): meshes, hierarchy, lights,
+   conic gradient material, canvas texture, soft shadow blobs.
+   ===================================================================== */
+const Mini = (() => {
+  const lin = h => { const n = parseInt(h.slice(1), 16); return [(n >> 16) / 255, (n >> 8 & 255) / 255, (n & 255) / 255].map(c => Math.pow(c, 2.2)); };
+  const VS = `attribute vec3 aP;attribute vec3 aN;attribute vec2 aU;
+uniform mat4 uM;uniform mat4 uVP;varying vec3 vN;varying vec3 vW;varying vec3 vL;varying vec2 vU;
+void main(){vec4 w=uM*vec4(aP,1.);vW=w.xyz;vN=mat3(uM)*aN;vL=aP;vU=aU;gl_Position=uVP*w;}`;
+  const FS = `precision highp float;
+varying vec3 vN;varying vec3 vW;varying vec3 vL;varying vec2 vU;
+uniform vec3 uCol;uniform vec3 uEm;uniform float uEmI;uniform float uRough;uniform float uCoat;uniform float uMode;uniform float uA;
+uniform vec3 uCam;uniform sampler2D uTex;
+uniform vec3 uSky;uniform vec3 uGnd;uniform vec3 uKD;uniform vec3 uKC;uniform vec3 uRD;uniform vec3 uRC;uniform vec3 uFD;uniform vec3 uFC;
+uniform vec3 uC0;uniform vec3 uC1;uniform vec3 uC2;uniform vec3 uC3;uniform float uExp;
+vec3 knee(vec3 c){float l=max(max(c.r,c.g),c.b);if(l>.82){float k=.82+(1.-exp(-(l-.82)*3.))*.18;c*=k/l;}return c;}
+void main(){
+  if(uMode>2.5){float r=length(vU-.5)*2.;float a=(1.-smoothstep(.0,1.,r));a=a*a*uA;gl_FragColor=vec4(uCol*a,a);return;}
+  vec3 N=normalize(vN);if(!gl_FrontFacing)N=-N;vec3 V=normalize(uCam-vW);
+  vec3 base=uCol;
+  if(uMode>.5&&uMode<1.5){float a=fract(atan(vL.y,vL.x)/6.2831853+.62);
+    base=a<.25?mix(uC0,uC1,a/.25):a<.5?mix(uC1,uC2,(a-.25)/.25):a<.75?mix(uC2,uC3,(a-.5)/.25):mix(uC3,uC0,(a-.75)/.25);}
+  vec3 col=mix(uGnd,uSky,N.y*.5+.5)*base*.5;
+  float sh=mix(10.,90.,1.-uRough);
+  vec3 L=normalize(uKD);float d=max(dot(N,L),0.);vec3 H=normalize(L+V);
+  col+=base*uKC*d+uKC*pow(max(dot(N,H),0.),sh)*(1.-uRough)*.45*d;
+  col+=base*uFC*max(dot(N,normalize(uFD)),0.);
+  col+=base*uRC*max(dot(N,normalize(uRD)),0.);
+  float fr=pow(1.-max(dot(N,V),0.),4.);col+=uSky*fr*(.08+uCoat*.16);
+  col+=uKC*pow(max(dot(N,H),0.),240.)*uCoat*1.4*step(0.,d);
+  vec3 em=uEm*uEmI;if(uMode>1.5)em=pow(texture2D(uTex,vU).rgb,vec3(2.2))*uEmI;
+  col+=em;
+  col=knee(col*uExp);col=pow(clamp(col,0.,1.),vec3(1./2.2));
+  gl_FragColor=vec4(col*uA,uA);
+}`;
+  /* --- geometry --- */
+  function finish(P, N, U, I) { return {P: new Float32Array(P), N: new Float32Array(N), U: new Float32Array(U), I: new Uint16Array(I)}; }
+  function roundedBox(w, h, d, r, n = 5) {
+    const hs = [w / 2, h / 2, d / 2]; r = Math.min(r, ...hs) * .999;
+    const coords = hh => { const a = []; for (let i = 0; i <= n; i++) a.push(-hh + r - r * Math.cos(i / n * Math.PI / 2)); for (let i = 0; i <= n; i++) a.push(hh - r + r * Math.sin(i / n * Math.PI / 2)); return a; };
+    const C = hs.map(coords);
+    const faces = [[0, 1, [0, 0, -1], [0, 1, 0]], [0, -1, [0, 0, 1], [0, 1, 0]], [1, 1, [1, 0, 0], [0, 0, -1]], [1, -1, [1, 0, 0], [0, 0, 1]], [2, 1, [1, 0, 0], [0, 1, 0]], [2, -1, [-1, 0, 0], [0, 1, 0]]];
+    const P = [], N = [], U = [], I = [];
+    for (const [ax, sg, u, v] of faces) {
+      const ua = u.findIndex(x => x), va = v.findIndex(x => x), cu = C[ua], cv = C[va], base = P.length / 3;
+      for (let j = 0; j < cv.length; j++) for (let i = 0; i < cu.length; i++) {
+        const p = [0, 0, 0]; p[ax] = sg * hs[ax]; p[ua] = cu[i] * u[ua]; p[va] = cv[j] * v[va];
+        const q = p.map((x, k) => Math.max(-(hs[k] - r), Math.min(hs[k] - r, x)));
+        let nx = p[0] - q[0], ny = p[1] - q[1], nz = p[2] - q[2], l = Math.hypot(nx, ny, nz);
+        if (l < 1e-6) { nx = ny = nz = 0; [nx, ny, nz][ax] = 0; const t = [0, 0, 0]; t[ax] = sg; [nx, ny, nz] = t; l = 1; }
+        nx /= l; ny /= l; nz /= l;
+        P.push(q[0] + nx * r, q[1] + ny * r, q[2] + nz * r); N.push(nx, ny, nz); U.push(i / (cu.length - 1), j / (cv.length - 1));
+      }
+      const W = cu.length;
+      for (let j = 0; j < cv.length - 1; j++) for (let i = 0; i < W - 1; i++) { const a = base + j * W + i; I.push(a, a + 1, a + W + 1, a, a + W + 1, a + W); }
+    }
+    return finish(P, N, U, I);
+  }
+  function sphere(r, ws = 24, hs = 16) {
+    const P = [], N = [], U = [], I = [];
+    for (let j = 0; j <= hs; j++) { const v = j / hs, th = v * Math.PI; for (let i = 0; i <= ws; i++) { const u = i / ws, ph = u * Math.PI * 2; const x = -Math.cos(ph) * Math.sin(th), y = Math.cos(th), z = Math.sin(ph) * Math.sin(th); P.push(x * r, y * r, z * r); N.push(x, y, z); U.push(u, 1 - v); } }
+    for (let j = 0; j < hs; j++) for (let i = 0; i < ws; i++) { const a = j * (ws + 1) + i, b = a + ws + 1; I.push(a, b, a + 1, b, b + 1, a + 1); }
+    return finish(P, N, U, I);
+  }
+  function cylinder(rt, rb, h, seg = 28, caps = true) {
+    const P = [], N = [], U = [], I = [], sl = (rb - rt) / h;
+    for (let j = 0; j <= 1; j++) for (let i = 0; i <= seg; i++) { const a = i / seg * Math.PI * 2, r = j ? rt : rb, s = Math.sin(a), c = Math.cos(a); P.push(s * r, j ? h / 2 : -h / 2, c * r); const l = Math.hypot(1, sl); N.push(s / l, sl / l, c / l); U.push(i / seg, j); }
+    for (let i = 0; i < seg; i++) I.push(i, i + 1, i + seg + 2, i, i + seg + 2, i + seg + 1);
+    if (caps) for (const top of [1, -1]) {
+      const c0 = P.length / 3, r = top > 0 ? rt : rb; P.push(0, top * h / 2, 0); N.push(0, top, 0); U.push(.5, .5);
+      for (let i = 0; i <= seg; i++) { const a = i / seg * Math.PI * 2; P.push(Math.sin(a) * r, top * h / 2, Math.cos(a) * r); N.push(0, top, 0); U.push(.5 + Math.sin(a) / 2, .5 + Math.cos(a) / 2); }
+      for (let i = 0; i < seg; i++) top > 0 ? I.push(c0, c0 + 1 + i, c0 + 2 + i) : I.push(c0, c0 + 2 + i, c0 + 1 + i);
+    }
+    return finish(P, N, U, I);
+  }
+  function extrude(pts, depth) { // convex outline, counter-clockwise, in xy; extruded along z
+    const P = [], N = [], U = [], I = [], n = pts.length, z = depth / 2;
+    let minx = 1e9, maxx = -1e9, miny = 1e9, maxy = -1e9; for (const [x, y] of pts) { minx = Math.min(minx, x); maxx = Math.max(maxx, x); miny = Math.min(miny, y); maxy = Math.max(maxy, y); }
+    for (const s of [1, -1]) { const b = P.length / 3; for (const [x, y] of pts) { P.push(x, y, s * z); N.push(0, 0, s); U.push((x - minx) / (maxx - minx || 1), (y - miny) / (maxy - miny || 1)); } for (let i = 1; i < n - 1; i++) s > 0 ? I.push(b, b + i, b + i + 1) : I.push(b, b + i + 1, b + i); }
+    const en = []; for (let i = 0; i < n; i++) { const [x0, y0] = pts[i], [x1, y1] = pts[(i + 1) % n], l = Math.hypot(x1 - x0, y1 - y0) || 1; en.push([(y1 - y0) / l, -(x1 - x0) / l]); }
+    for (let i = 0; i < n; i++) {
+      const j = (i + 1) % n, e = en[i];
+      const vn = k => { const a = en[(k - 1 + n) % n], b = en[k]; return (a[0] * b[0] + a[1] * b[1]) > .86 ? [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2] : null; };
+      const n0 = (vn(i) || e), n1 = (() => { const a = en[i], b = en[j]; return (a[0] * b[0] + a[1] * b[1]) > .86 ? [(a[0] + b[0]) / 2, (a[1] + b[1]) / 2] : e; })();
+      const b = P.length / 3;
+      for (const [p, nn] of [[pts[i], n0], [pts[j], n1]]) for (const s of [1, -1]) { const l = Math.hypot(nn[0], nn[1]) || 1; P.push(p[0], p[1], s * z); N.push(nn[0] / l, nn[1] / l, 0); U.push(0, 0); }
+      I.push(b, b + 1, b + 3, b, b + 3, b + 2);
+    }
+    return finish(P, N, U, I);
+  }
+  function plane(w, h) { return finish([-w / 2, -h / 2, 0, w / 2, -h / 2, 0, w / 2, h / 2, 0, -w / 2, h / 2, 0], [0, 0, 1, 0, 0, 1, 0, 0, 1, 0, 0, 1], [0, 0, 1, 0, 1, 1, 0, 1], [0, 1, 2, 0, 2, 3]); }
+  const halfDisc = (R, top, seg = 40) => { const p = []; for (let i = 0; i <= seg; i++) { const a = top ? i / seg * Math.PI : Math.PI + i / seg * Math.PI; p.push([Math.cos(a) * R, Math.sin(a) * R]); } return top ? p : p; };
+  const band = (R, y0, y1, seg = 16) => { const p = []; for (let i = 0; i <= seg; i++) { const y = y0 + (y1 - y0) * i / seg; p.push([Math.sqrt(Math.max(R * R - y * y, 0)), y]); } for (let i = seg; i >= 0; i--) { const y = y0 + (y1 - y0) * i / seg; p.push([-Math.sqrt(Math.max(R * R - y * y, 0)), y]); } return p.filter((q, i, a) => i === 0 || Math.hypot(q[0] - a[i - 1][0], q[1] - a[i - 1][1]) > 1e-5); };
+
+  /* --- math --- */
+  const mul = (a, b) => { const o = new Float32Array(16); for (let c = 0; c < 4; c++) for (let r = 0; r < 4; r++) { let s = 0; for (let k = 0; k < 4; k++) s += a[k * 4 + r] * b[c * 4 + k]; o[c * 4 + r] = s; } return o; };
+  const trs = (p, r, s) => { // euler order YXZ
+    const [x, y, z] = r, cx = Math.cos(x), sx = Math.sin(x), cy = Math.cos(y), sy = Math.sin(y), cz = Math.cos(z), sz = Math.sin(z);
+    const m00 = cy * cz + sy * sx * sz, m01 = -cy * sz + sy * sx * cz, m02 = sy * cx;
+    const m10 = cx * sz, m11 = cx * cz, m12 = -sx;
+    const m20 = -sy * cz + cy * sx * sz, m21 = sy * sz + cy * sx * cz, m22 = cy * cx;
+    return new Float32Array([m00 * s, m10 * s, m20 * s, 0, m01 * s, m11 * s, m21 * s, 0, m02 * s, m12 * s, m22 * s, 0, p[0], p[1], p[2], 1]);
+  };
+  const persp = (f, a, n, fa) => { const t = 1 / Math.tan(f / 2), nf = 1 / (n - fa); return new Float32Array([t / a, 0, 0, 0, 0, t, 0, 0, 0, 0, (fa + n) * nf, -1, 0, 0, 2 * fa * n * nf, 0]); };
+  const lookAt = (e, c) => { let z = [e[0] - c[0], e[1] - c[1], e[2] - c[2]]; let l = Math.hypot(...z); z = z.map(v => v / l); let x = [z[2], 0, -z[0]]; l = Math.hypot(...x) || 1; x = x.map(v => v / l); const y = [z[1] * x[2] - z[2] * x[1], z[2] * x[0] - z[0] * x[2], z[0] * x[1] - z[1] * x[0]]; return new Float32Array([x[0], y[0], z[0], 0, x[1], y[1], z[1], 0, x[2], y[2], z[2], 0, -(x[0] * e[0] + x[1] * e[1] + x[2] * e[2]), -(y[0] * e[0] + y[1] * e[1] + y[2] * e[2]), -(z[0] * e[0] + z[1] * e[1] + z[2] * e[2]), 1]); };
+  const xf = (m, v) => [m[0] * v[0] + m[4] * v[1] + m[8] * v[2] + m[12], m[1] * v[0] + m[5] * v[1] + m[9] * v[2] + m[13], m[2] * v[0] + m[6] * v[1] + m[10] * v[2] + m[14], m[3] * v[0] + m[7] * v[1] + m[11] * v[2] + m[15]];
+
+  function create(canvas) {
+    let gl = null;
+    try { gl = canvas.getContext("webgl", {antialias: true, alpha: true, premultipliedAlpha: true}); } catch (e) {}
+    if (!gl) return null;
+    const sh = (t, s) => { const o = gl.createShader(t); gl.shaderSource(o, s); gl.compileShader(o); if (!gl.getShaderParameter(o, gl.COMPILE_STATUS)) { console.warn(gl.getShaderInfoLog(o)); return null; } return o; };
+    const v = sh(gl.VERTEX_SHADER, VS), f = sh(gl.FRAGMENT_SHADER, FS); if (!v || !f) return null;
+    const pr = gl.createProgram(); gl.attachShader(pr, v); gl.attachShader(pr, f); gl.linkProgram(pr); if (!gl.getProgramParameter(pr, gl.LINK_STATUS)) return null;
+    gl.useProgram(pr);
+    const A = {P: gl.getAttribLocation(pr, "aP"), N: gl.getAttribLocation(pr, "aN"), U: gl.getAttribLocation(pr, "aU")};
+    const Un = {}; ["uM", "uVP", "uCol", "uEm", "uEmI", "uRough", "uCoat", "uMode", "uA", "uCam", "uTex", "uSky", "uGnd", "uKD", "uKC", "uRD", "uRC", "uFD", "uFC", "uC0", "uC1", "uC2", "uC3", "uExp"].forEach(n => Un[n] = gl.getUniformLocation(pr, n));
+    gl.enable(gl.DEPTH_TEST); gl.pixelStorei(gl.UNPACK_FLIP_Y_WEBGL, true); gl.pixelStorei(gl.UNPACK_PREMULTIPLY_ALPHA_WEBGL, false);
+    const buf = (d, t = gl.ARRAY_BUFFER) => { const b = gl.createBuffer(); gl.bindBuffer(t, b); gl.bufferData(t, d, gl.STATIC_DRAW); return b; };
+    const geo = g => ({p: buf(g.P), n: buf(g.N), u: buf(g.U), i: buf(g.I, gl.ELEMENT_ARRAY_BUFFER), c: g.I.length});
+    const mat = (o = {}) => ({col: lin(o.col || "#ffffff"), em: lin(o.em || "#000000"), emI: o.emI || 0, rough: o.rough ?? .5, coat: o.coat || 0, mode: o.mode || 0, a: o.a ?? 1, tex: o.tex || null});
+    const node = (g = null, m = null, o = {}) => ({g, m, pos: o.pos || [0, 0, 0], rot: o.rot || [0, 0, 0], s: o.s || 1, kids: [], vis: true, world: null});
+    const add = (p, ...k) => { p.kids.push(...k); return p; };
+    const texture = cv => { const t = gl.createTexture(); gl.bindTexture(gl.TEXTURE_2D, t); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_MIN_FILTER, gl.LINEAR); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_S, gl.CLAMP_TO_EDGE); gl.texParameteri(gl.TEXTURE_2D, gl.TEXTURE_WRAP_T, gl.CLAMP_TO_EDGE); gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, cv); return {t, cv, update() { gl.bindTexture(gl.TEXTURE_2D, t); gl.texImage2D(gl.TEXTURE_2D, 0, gl.RGBA, gl.RGBA, gl.UNSIGNED_BYTE, cv); }}; };
+    let VP = null, W = 1, H = 1;
+    const env = o => { const L = {sky: lin(o.sky), gnd: lin(o.gnd), kd: o.kd, kc: lin(o.kc).map(c => c * o.ki), rd: o.rd, rc: lin(o.rc).map(c => c * o.ri), fd: o.fd, fc: lin(o.fc).map(c => c * o.fi), c: (o.conic || ["#FF7A30", "#FFB347", "#3B5BFF", "#6E86FF"]).map(lin), exp: o.exp || 1}; return L; };
+    function render(root, cam, L) {
+      const dpr = Math.min(window.devicePixelRatio || 1, 2), cw = canvas.clientWidth, ch = canvas.clientHeight;
+      if (canvas.width !== Math.round(cw * dpr) || canvas.height !== Math.round(ch * dpr)) { canvas.width = Math.round(cw * dpr); canvas.height = Math.round(ch * dpr); }
+      W = cw; H = ch; gl.viewport(0, 0, canvas.width, canvas.height);
+      gl.clearColor(0, 0, 0, 0); gl.clear(gl.COLOR_BUFFER_BIT | gl.DEPTH_BUFFER_BIT);
+      VP = mul(persp(cam.fov, cw / Math.max(ch, 1), .1, 100), lookAt(cam.pos, cam.target));
+      gl.uniformMatrix4fv(Un.uVP, false, VP); gl.uniform3fv(Un.uCam, cam.pos);
+      gl.uniform3fv(Un.uSky, L.sky); gl.uniform3fv(Un.uGnd, L.gnd); gl.uniform3fv(Un.uKD, L.kd); gl.uniform3fv(Un.uKC, L.kc); gl.uniform3fv(Un.uRD, L.rd); gl.uniform3fv(Un.uRC, L.rc); gl.uniform3fv(Un.uFD, L.fd); gl.uniform3fv(Un.uFC, L.fc);
+      gl.uniform3fv(Un.uC0, L.c[0]); gl.uniform3fv(Un.uC1, L.c[1]); gl.uniform3fv(Un.uC2, L.c[2]); gl.uniform3fv(Un.uC3, L.c[3]); gl.uniform1f(Un.uExp, L.exp);
+      const solid = [], soft = [];
+      (function walk(n, pm) { if (!n.vis) return; n.world = pm ? mul(pm, trs(n.pos, n.rot, n.s)) : trs(n.pos, n.rot, n.s); if (n.g) (n.m.mode === 3 ? soft : solid).push(n); n.kids.forEach(k => walk(k, n.world)); })(root, null);
+      const draw = n => {
+        const g = n.g, m = n.m;
+        gl.bindBuffer(gl.ARRAY_BUFFER, g.p); gl.enableVertexAttribArray(A.P); gl.vertexAttribPointer(A.P, 3, gl.FLOAT, false, 0, 0);
+        gl.bindBuffer(gl.ARRAY_BUFFER, g.n); gl.enableVertexAttribArray(A.N); gl.vertexAttribPointer(A.N, 3, gl.FLOAT, false, 0, 0);
+        gl.bindBuffer(gl.ARRAY_BUFFER, g.u); gl.enableVertexAttribArray(A.U); gl.vertexAttribPointer(A.U, 2, gl.FLOAT, false, 0, 0);
+        gl.bindBuffer(gl.ELEMENT_ARRAY_BUFFER, g.i);
+        gl.uniformMatrix4fv(Un.uM, false, n.world); gl.uniform3fv(Un.uCol, m.col); gl.uniform3fv(Un.uEm, m.em); gl.uniform1f(Un.uEmI, m.emI);
+        gl.uniform1f(Un.uRough, m.rough); gl.uniform1f(Un.uCoat, m.coat); gl.uniform1f(Un.uMode, m.mode); gl.uniform1f(Un.uA, m.a);
+        if (m.tex) { gl.activeTexture(gl.TEXTURE0); gl.bindTexture(gl.TEXTURE_2D, m.tex.t); gl.uniform1i(Un.uTex, 0); }
+        gl.drawElements(gl.TRIANGLES, g.c, gl.UNSIGNED_SHORT, 0);
+      };
+      gl.disable(gl.BLEND); gl.depthMask(true); solid.forEach(draw);
+      if (soft.length) { gl.enable(gl.BLEND); gl.blendFunc(gl.ONE, gl.ONE_MINUS_SRC_ALPHA); gl.depthMask(false); soft.forEach(draw); gl.depthMask(true); }
+    }
+    const project = (n, p = [0, 0, 0]) => { if (!n.world || !VP) return null; const w = xf(n.world, p), c = xf(VP, w); if (c[3] <= 0) return null; return [(c[0] / c[3] + 1) / 2 * W, (1 - c[1] / c[3]) / 2 * H]; };
+    return {gl, geo, mat, node, add, render, env, texture, project};
+  }
+  return {create, roundedBox, sphere, cylinder, extrude, plane, halfDisc, band};
+})();
+
+const clamp01 = x => Math.min(1, Math.max(0, x));
+const smooth = t => t * t * (3 - 2 * t);
+const lerp = (a, b, t) => a + (b - a) * t;
+const isPaused = () => root.classList.contains("paused");
+const isRM = () => root.classList.contains("rm");
+function whenVisible(el, cb){ const o = new IntersectionObserver(es => cb(es[0].isIntersecting), {rootMargin: "120px 0px"}); o.observe(el); return o; }
+
+/* =====================================================================
+   GOALS — the logo as a machine that comes apart (after Medusa JF-4)
+   5 parts = 5 goals; everything is a function of the playhead t.
+   ===================================================================== */
+(function goalsScene(){
+  const stage = document.querySelector(".gview"); if (!stage) return;
+  const cv = stage.querySelector("canvas"), E = Mini.create(cv);
+  const list = [...document.querySelectorAll(".goal-list li")];
+  const labels = [...stage.querySelectorAll(".glabel")], lines = [...stage.querySelectorAll(".leaders line")], dots = [...stage.querySelectorAll(".leaders circle")];
+  const rail = document.querySelector(".grail"), fill = rail.querySelector(".gfill"), knob = rail.querySelector(".gknob"), tc = document.querySelector(".gtc"), gnum = document.querySelector(".gnum");
+  const DUR = 25, WIN = 4.4, T0 = 2.6;
+  const goalAt = t => t >= T0 && t < T0 + 5 * WIN ? Math.floor((t - T0) / WIN) : -1;
+  if (!E) { root.classList.add("no-gl-goals"); return; }
+  const R = 1.5, D = .5;
+  const blue = E.mat({col: "#3B5BFF", rough: .32, coat: .6, em: "#3B5BFF"}), orange = E.mat({col: "#FF7A30", rough: .4, coat: .45, em: "#FF7A30"});
+  const shadowM = E.mat({col: "#7A4A2A", mode: 3, a: .28});
+  const BANDS = [[0, .316], [.388, .612], [.684, .842], [.914, 1]];
+  const world = E.node(), grp = E.node(); E.add(world, grp);
+  const parts = [];
+  BANDS.forEach(([a, b], i) => {
+    const pts = Mini.band(R, a * R, b * R);
+    const n = E.node(E.geo(Mini.extrude(pts, D)), E.mat({col: "#3B5BFF", rough: .3, coat: .5, em: "#6E86FF"}));
+    const yMid = (a + b) / 2 * R;
+    parts.push({n, home: [-.5 * R, .079 * R, 0], anchor: [Math.sqrt(Math.max(R * R - (b * R) ** 2, 0)) * .5 + .15, yMid, D / 2], idx: i});
+    E.add(grp, n);
+  });
+  { const n = E.node(E.geo(Mini.extrude(Mini.halfDisc(R, false), D)), E.mat({col: "#FF7A30", rough: .4, coat: .45, em: "#FFB347"}));
+    parts.push({n, home: [.5 * R, -.079 * R, 0], anchor: [R * .72, -R * .55, D / 2], idx: 4}); E.add(grp, n); }
+  const shadow = E.node(E.geo(Mini.plane(5.4, 2.2)), shadowM, {pos: [0, -2.15, 0], rot: [-Math.PI / 2, 0, 0]}); E.add(world, shadow);
+  const L = E.env({sky: "#FFF6EE", gnd: "#E9DCCB", kd: [-3, 5, 4], kc: "#FFF3E6", ki: 1.55, rd: [4, 2, -4], rc: "#DDE4FF", ri: .7, fd: [-3, 1, 2], fc: "#FFB98F", fi: .35, exp: 1.05});
+  const cam = {fov: 30 * Math.PI / 180, pos: [0, 1.1, 13.2], target: [0, .15, 0]};
+  // explode layout: parts fan out in depth and height, like a machine opened on the bench
+  const EXP = [[0, -.12, .95], [0, .12, .32], [0, .36, -.32], [0, .6, -.95], [-.2, -.42, 1.6]];
+  let t = 3.0, playing = !isRM(), visible = false, raf = 0, last = 0, scrub = false, wanted = -1;
+  function pose(tt) {
+    const expl = tt < 1.6 ? 0 : tt < T0 ? smooth((tt - 1.6) / (T0 - 1.6)) : tt < 23.6 ? 1 : tt < 24.8 ? 1 - smooth((tt - 23.6) / 1.2) : 0;
+    const g = goalAt(tt);
+    grp.rot = [.1 + .12 * expl, -.42 + .72 * expl + .07 * Math.sin(tt * .35), 0];
+    world.pos = [0, -.05 - .1 * expl, 0];
+    parts.forEach((p, i) => {
+      const e = EXP[i]; let pop = 0;
+      if (g === i) { const k = (tt - T0) - i * WIN; pop = smooth(clamp01(k / .5)) * (1 - smooth(clamp01((k - (WIN - .5)) / .5))); }
+      p.n.pos = [p.home[0] + e[0] * expl + .25 * pop, p.home[1] + e[1] * expl * 1.0 + .08 * pop, p.home[2] + e[2] * expl + .9 * pop];
+      p.n.rot = [0, .35 * pop, 0]; p.n.s = 1 + .06 * pop;
+      p.n.m.emI = .32 * pop; p.pop = pop;
+    });
+    return {expl, g};
+  }
+  function hud(tt, st) {
+    list.forEach((li, i) => li.classList.toggle("on", st.g === i));
+    const pct = tt / DUR * 100; fill.style.width = pct + "%"; knob.style.insetInlineStart = pct + "%";
+    tc.textContent = "00:" + String(Math.floor(tt)).padStart(2, "0") + " / 00:25";
+    gnum.textContent = st.g >= 0 ? "0" + (st.g + 1) + " / 05" : "— / 05";
+    rail.setAttribute("aria-valuenow", String(Math.round(tt)));
+    const box = stage.getBoundingClientRect(), rtl = document.dir === "rtl";
+    // labels sit in a column on the inline-end side, spaced by their anchor heights
+    const pts = parts.map(p => E.project(p.n, p.anchor));
+    const order = parts.map((p, i) => i).filter(i => pts[i]).sort((a, b) => pts[a][1] - pts[b][1]);
+    let prevY = -1e9; const ys = {};
+    order.forEach(i => { let y = Math.max(pts[i][1], prevY + 34); y = Math.min(Math.max(y, 18), box.height - 18); ys[i] = y; prevY = y; });
+    labels.forEach((lb, i) => {
+      const p = pts[i], show = st.expl > .55 && p;
+      lb.style.opacity = show ? 1 : 0; lines[i].setAttribute("opacity", show ? (st.g === i ? .9 : .45) : 0); dots[i].setAttribute("opacity", show ? 1 : 0);
+      lb.classList.toggle("on", st.g === i);
+      if (!show) return;
+      const lx = rtl ? 14 : box.width - 14, y = ys[i];
+      lb.style.transform = `translate(${rtl ? lx : lx - lb.offsetWidth}px, ${y - lb.offsetHeight / 2}px)`;
+      const ex = rtl ? lx + lb.offsetWidth + 8 : lx - lb.offsetWidth - 8;
+      lines[i].setAttribute("x1", p[0]); lines[i].setAttribute("y1", p[1]); lines[i].setAttribute("x2", ex); lines[i].setAttribute("y2", y);
+      dots[i].setAttribute("cx", p[0]); dots[i].setAttribute("cy", p[1]);
+    });
+  }
+  function draw() { const st = pose(t); E.render(world, cam, L); hud(t, st); }
+  function frame(now) {
+    raf = 0; const dt = Math.min(.05, (now - last) / 1000); last = now;
+    if (playing && !isPaused() && !scrub) t = (t + dt) % DUR;
+    draw();
+    if (visible && playing && !isPaused() && !isRM()) raf = requestAnimationFrame(frame);
+  }
+  const kick = () => { if (!raf) { last = performance.now(); raf = requestAnimationFrame(frame); } };
+  whenVisible(stage, v => { visible = v; if (v) kick(); });
+  const seek = x => { t = Math.min(DUR - .001, Math.max(0, x)); kick(); };
+  list.forEach((li, i) => li.querySelector(".gjump").addEventListener("click", () => seek(T0 + i * WIN + .6)));
+  const railX = e => { const r = rail.getBoundingClientRect(); let f = (e.clientX - r.left) / r.width; if (document.dir === "rtl") f = 1 - f; seek(f * DUR); };
+  rail.addEventListener("pointerdown", e => { scrub = true; rail.setPointerCapture(e.pointerId); railX(e); });
+  rail.addEventListener("pointermove", e => { if (scrub) railX(e); });
+  rail.addEventListener("pointerup", () => scrub = false); rail.addEventListener("pointercancel", () => scrub = false);
+  rail.addEventListener("keydown", e => { const k = e.key, rtl = document.dir === "rtl"; if (k === "ArrowRight" || k === "ArrowLeft") { e.preventDefault(); seek(t + ((k === "ArrowRight") !== rtl ? 1 : -1)); } });
+  window.addEventListener("resize", kick);
+  window.__goals = { kick };
+  draw();
+})();
+
+/* =====================================================================
+   DIGITAL TRANSFORMATION — paper crosses the scanner and becomes data
+   (after Distill). Cards are DOM, the dissolve is a 2D canvas.
+   ===================================================================== */
+(function belt(){
+  const sec = document.getElementById("fields"), beltEl = sec && sec.querySelector(".belt"); if (!beltEl) return;
+  const cards = [...beltEl.querySelectorAll(".doc")], codes = [...beltEl.querySelectorAll(".code")], fx = beltEl.querySelector("canvas.fx"), ctx = fx.getContext("2d");
+  const badgeN = sec.querySelector(".bn"), badgeP = sec.querySelector(".bp");
+  const PAL = ["#C2410C", "#E2551E", "#FF7A30", "#FF9446", "#FFB06A", "#FFD2A8", "#FFF1E2"], HOT = ["#FFFFFF", "#DCE3FF", "#AFBDFF"], BIT = ["#6E86FF", "#AFBDFF", "#3B5BFF", "#DCE3FF"];
+  const hash = (a, b, c) => { let h = (a * 374761393 + b * 668265263 + c * 2147483647) | 0; h = Math.imul(h ^ (h >>> 13), 1274126177); return ((h ^ (h >>> 16)) >>> 0) / 4294967296; };
+  let W = 0, Hb = 0, cw = 0, ch = 0, gap = 0, top = 0, Lx = 0, dpr = 1, off = 0, vel = 0, hover = 0, hovering = false, drag = null, visible = false, raf = 0, last = 0, shown = 0, cur = -1;
+  const sparks = [];
+  function measure() {
+    const r = beltEl.getBoundingClientRect(); W = r.width; Hb = r.height;
+    const c0 = cards[0].getBoundingClientRect(); cw = c0.width; ch = c0.height; top = cards[0].offsetTop;
+    gap = parseFloat(getComputedStyle(beltEl).getPropertyValue("--gap")) / 100 * innerWidth || 40;
+    Lx = W / 2; dpr = Math.min(window.devicePixelRatio || 1, 2);
+    fx.width = Math.round(W * dpr); fx.height = Math.round(Hb * dpr);
+    if (!off) off = W / 2 - .62 * cw;
+  }
+  const fmt = n => n.toLocaleString("en-US");
+  function frame(now) {
+    raf = 0; const dt = Math.min(.05, (now - last) / 1000 || 0); last = now;
+    const still = isRM() || isPaused();
+    const auto = still ? 0 : -.06 * innerWidth;
+    hover += ((hovering ? 1 : 0) - hover) * Math.min(1, dt * 4);
+    if (!drag) { const target = auto * (1 - .65 * hover); vel += (target - vel) * (1 - Math.exp(-2.2 * dt)); off += vel * dt; }
+    const span = cw + gap, period = span * cards.length;
+    ctx.setTransform(dpr, 0, 0, dpr, 0, 0); ctx.clearRect(0, 0, W, Hb);
+    let crossing = -1, prog = 0;
+    cards.forEach((c, i) => {
+      const x = ((off + i * span + span) % period + period) % period - span;
+      const cut = Math.min(cw, Math.max(0, Lx - x));
+      c.style.transform = `translate3d(${x}px,0,0)`;
+      if (cut > 0) { c.style.clipPath = `inset(0 0 0 ${cut}px)`; c.style.webkitMaskImage = c.style.maskImage = `linear-gradient(90deg, transparent ${cut}px, #000 ${cut + 26}px)`; }
+      else { c.style.clipPath = "none"; c.style.webkitMaskImage = c.style.maskImage = "none"; }
+      const cd = codes[i]; cd.style.transform = `translate3d(${x}px,0,0)`; cd.style.clipPath = `inset(0 ${cw - cut}px 0 0)`; cd.style.visibility = cut > 0 ? "visible" : "hidden";
+      if (cut > 0 && cut < cw) { crossing = i; prog = cut / cw; }
+      if (cut > 0 && x + cw > Lx) drawFx(x, i, now / 1000, still);
+    });
+    // sparks: sand turning into data bits, drifting over the code side
+    if (!still && crossing >= 0) for (let k = 0; k < 3; k++) if (Math.random() < .7) sparks.push({x: Lx + Math.random() * 30, y: top - 10 + Math.random() * (ch + 20), vx: -30 + Math.random() * 70 + vel * .6, vy: (Math.random() - .5) * 50, s: .8 + Math.random() * 1.8, life: .3 + Math.random() * .8, c: BIT[(Math.random() * BIT.length) | 0]});
+    for (let k = sparks.length - 1; k >= 0; k--) { const s = sparks[k]; s.life -= dt; if (s.life <= 0) { sparks.splice(k, 1); continue; } s.x += s.vx * dt; s.y += s.vy * dt; ctx.globalAlpha = Math.min(1, s.life * 2.2); ctx.fillStyle = s.c; ctx.fillRect(s.x, s.y, s.s, s.s); }
+    ctx.globalAlpha = 1;
+    // the counter follows the card on the line
+    if (crossing >= 0) {
+      const n = +codes[crossing].dataset.n;
+      if (crossing !== cur) { cur = crossing; shown = Math.round(n * prog); }
+      shown += (n * prog - shown) * Math.min(1, dt * 14);
+      badgeN.textContent = `${Math.round(shown)} / ${n} ${t("tf.fields")}`; badgeP.textContent = Math.round(prog * 100) + "%";
+    }
+    if (visible) raf = requestAnimationFrame(frame);
+  }
+  function drawFx(x, ci, tt, still) {
+    const right = x + cw - Lx, Rr = .3 * cw;
+    const hz = Math.min(150, right); if (hz > 0) { const g = ctx.createLinearGradient(Lx, 0, Lx + 150, 0); g.addColorStop(0, "rgba(255,122,48,.4)"); g.addColorStop(1, "rgba(255,122,48,0)"); ctx.fillStyle = g; ctx.fillRect(Lx, top, hz, ch); }
+    const g0 = Math.max(0, Math.floor((Lx - x) / 3)), g1 = Math.min(Math.floor(cw / 3), Math.floor((Lx + Rr - x) / 3)), rows = Math.floor(ch / 3), tick = still ? 0 : Math.floor(tt * 9);
+    for (let gx = g0; gx <= g1; gx++) {
+      const sx = x + gx * 3, d = sx - Lx; if (d < 0) continue;
+      const p = Math.pow(1 - d / Rr, 1.7); if (p <= 0) continue;
+      for (let row = -5; row < rows + 5; row++) {
+        const inside = row >= 0 && row < rows, edge = inside ? 1 : 1 - (row < 0 ? -row : row - rows + 1) / 5;
+        const h = hash(gx, row, ci); if (h >= (inside ? p * .92 : p * .16 * edge)) continue;
+        if (!still && hash(gx, row, tick + 97) < .22) continue;
+        const h2 = hash(row, gx, ci + 31);
+        ctx.fillStyle = d < 10 ? HOT[Math.floor(h2 * 3)] : PAL[Math.floor(h2 * h2 * 7)];
+        const sz = 1.1 + h2 * 1.7, jx = still ? 0 : (h - .5) * 1.6, jy = still ? 0 : (h2 - .5) * 1.6;
+        ctx.fillRect(sx + jx, top + row * 3 + jy, sz, sz);
+      }
+    }
+  }
+  const kick = () => { if (!raf && visible) { last = performance.now(); raf = requestAnimationFrame(frame); } };
+  whenVisible(sec, v => { visible = v; if (v) { measure(); kick(); } });
+  window.addEventListener("resize", () => { measure(); kick(); });
+  beltEl.addEventListener("pointerenter", () => hovering = true); beltEl.addEventListener("pointerleave", () => hovering = false);
+  beltEl.addEventListener("pointerdown", e => { drag = {x: e.clientX, t: performance.now()}; beltEl.setPointerCapture(e.pointerId); beltEl.classList.add("drag"); vel = 0; });
+  beltEl.addEventListener("pointermove", e => { if (!drag) return; const now = performance.now(), dx = e.clientX - drag.x; off += dx; vel = dx / Math.max(8, now - drag.t) * 1000 * .8 + vel * .2; drag = {x: e.clientX, t: now}; kick(); });
+  const end = () => { drag = null; beltEl.classList.remove("drag"); };
+  beltEl.addEventListener("pointerup", end); beltEl.addEventListener("pointercancel", end);
+  beltEl.addEventListener("wheel", e => { if (Math.abs(e.deltaX) > Math.abs(e.deltaY)) { e.preventDefault(); vel += -e.deltaX * 6; kick(); } }, {passive: false});
+  window.__belt = { kick, measure };
+})();
+
+/* =====================================================================
+   GAMES — a SAHARAHUB robot on the dune (after Nova Agent)
+   ===================================================================== */
+(function robotScene(){
+  const sec = document.getElementById("games"), stage = sec && sec.querySelector(".rstage"); if (!stage) return;
+  const cv = stage.querySelector("canvas"), E = Mini.create(cv);
+  // tab strip of EduPlay3D labs
+  const strip = sec.querySelector(".tabs"), tabs = [...strip.children], TABN = tabs.length;
+  tabs.forEach(tb => strip.appendChild(tb.cloneNode(true)));
+  let tabI = 0, tabTimer = 0;
+  function tabStep(jump) {
+    const all = [...strip.children], w = all[0].getBoundingClientRect().width, rtl = document.dir === "rtl";
+    all.forEach((el, i) => { el.classList.toggle("on", i === tabI); el.classList.toggle("past", i < tabI); });
+    strip.style.transition = jump ? "none" : "";
+    strip.style.transform = `translateX(${(rtl ? 1 : -1) * tabI * w}px)`;
+  }
+  function tabTick() {
+    if (isPaused() || isRM()) return;
+    tabI++; tabStep(false);
+    if (tabI >= TABN) setTimeout(() => { tabI = 0; tabStep(true); }, 950);
+  }
+  tabStep(true); setInterval(tabTick, 2400);
+  window.__tabs = () => tabStep(true);
+  if (!E) { root.classList.add("no-gl-robot"); return; }
+
+  const M = {
+    shell: E.mat({col: "#F0ECE7", rough: .38, coat: .45}), light: E.mat({col: "#FBF9F6", rough: .34, coat: .45}),
+    dark: E.mat({col: "#1A2042", rough: .5, coat: .2}), deep: E.mat({col: "#0B1026", rough: .6}),
+    ring: E.mat({col: "#ffffff", rough: .45, coat: .4, mode: 1}), dune: E.mat({col: "#FF7A30", rough: .55, coat: .25, em: "#FF7A30", emI: .04}),
+    data: E.mat({col: "#3B5BFF", rough: .32, coat: .5, em: "#6E86FF", emI: .1}), shadow: E.mat({col: "#5A2410", mode: 3, a: .42}),
+    ledO: E.mat({col: "#FF7A30", em: "#FF7A30", emI: 1.4, rough: .3}), ledA: E.mat({col: "#FFB347", em: "#FFB347", emI: 1.4, rough: .3}), ledB: E.mat({col: "#6E86FF", em: "#6E86FF", emI: 1.6, rough: .3}),
+  };
+  const fc = document.createElement("canvas"); fc.width = fc.height = 512; const fx = fc.getContext("2d");
+  const faceTex = E.texture(fc); const screen = E.mat({col: "#05070F", rough: .1, coat: 1, mode: 2, emI: 2.1, tex: faceTex});
+  const G = (g) => E.geo(g), N = (g, m, o) => E.node(g, m, o), add = E.add;
+  const world = N(), robot = N(), body = N(); add(world, robot); add(robot, body);
+  // dune pedestal (the orange half-disc of the logo) and the data lines behind
+  const DR = 1.55;
+  add(world, N(G(Mini.extrude(Mini.halfDisc(DR, false), 1.5)), M.dune, {pos: [.25, -1.46, 0]}));
+  add(world, N(G(Mini.plane(2.4, 1.3)), M.shadow, {pos: [0, -1.455, .05], rot: [-Math.PI / 2, 0, 0]}));
+  const dataBars = [];
+  [[0, .316], [.388, .612], [.684, .842], [.914, 1]].forEach(([a, b], i) => {
+    const BR = 1.3, n = N(G(Mini.extrude(Mini.band(BR, a * BR, b * BR), .22)), M.data, {pos: [-.95, -1.46 + .12, -1.1]});
+    add(world, n); dataBars.push(n);
+  });
+  // torso
+  add(body, N(G(Mini.roundedBox(1.22, 1.12, .92, .24)), M.shell));
+  add(body, N(G(Mini.roundedBox(1.02, .26, .8, .1)), M.light, {pos: [0, .5, 0]}));
+  const leds = [M.ledO, M.ledA, M.ledB].map((m, i) => { const n = N(G(Mini.sphere(.045, 12, 8)), m, {pos: [-.16 + i * .16, .18, .47]}); add(body, n); return n; });
+  [-.22, .22].forEach(x => add(body, N(G(Mini.roundedBox(.08, .3, .06, .03)), M.deep, {pos: [x, -.16, .45]})));
+  add(body, N(G(Mini.roundedBox(.9, .22, .74, .1)), M.dark, {pos: [0, -.64, 0]}));
+  // neck + head
+  add(body, N(G(Mini.cylinder(.16, .18, .3)), M.dark, {pos: [0, .68, 0]}));
+  const head = N(null, null, {pos: [0, .78, 0]}); add(body, head);
+  const skull = N(null, null, {pos: [0, .78, 0]}); add(head, skull);
+  add(skull, N(G(Mini.roundedBox(1.5, 1.42, 1.3, .22)), M.shell));
+  add(skull, N(G(Mini.roundedBox(1.28, 1.14, .9, .16)), M.dark, {pos: [0, .02, -.3]}));
+  add(skull, N(G(Mini.roundedBox(1.5, 1.44, .12, .22)), M.ring, {pos: [0, 0, .62]}));
+  add(skull, N(G(Mini.roundedBox(1.2, 1.14, .08, .16)), M.light, {pos: [0, 0, .67]}));
+  add(skull, N(G(Mini.roundedBox(1.0, .94, .06, .12)), screen === null ? M.deep : E.mat({col: "#05070F", rough: .12, coat: 1}), {pos: [0, 0, .7]}));
+  add(skull, N(G(Mini.plane(.9, .84)), screen, {pos: [0, 0, .735]}));
+  [-1, 1].forEach(s => {
+    add(skull, N(G(Mini.cylinder(.22, .22, .18)), M.dark, {pos: [s * .83, .02, 0], rot: [0, 0, Math.PI / 2]}));
+    add(skull, N(G(Mini.cylinder(.13, .13, .06)), s > 0 ? M.ledO : M.ledB, {pos: [s * .93, .02, 0], rot: [0, 0, Math.PI / 2]}));
+  });
+  add(skull, N(G(Mini.cylinder(.025, .025, .34)), M.dark, {pos: [.32, .86, -.1]}));
+  add(skull, N(G(Mini.sphere(.07, 14, 10)), M.ledO, {pos: [.32, 1.05, -.1]}));
+  // arms
+  const arms = [-1, 1].map(s => {
+    const sh = N(null, null, {pos: [s * .74, .32, 0]}); add(body, sh);
+    add(sh, N(G(Mini.sphere(.17, 18, 12)), M.dark));
+    add(sh, N(G(Mini.roundedBox(.28, .46, .32, .12)), M.shell, {pos: [s * .04, -.32, 0]}));
+    const el = N(null, null, {pos: [s * .04, -.6, 0]}); add(sh, el);
+    add(el, N(G(Mini.sphere(.12, 14, 10)), M.dark));
+    add(el, N(G(Mini.roundedBox(.3, .34, .34, .12)), M.light, {pos: [0, -.26, .02]}));
+    add(el, N(G(Mini.roundedBox(.1, .16, .12, .05)), M.light, {pos: [-s * .17, -.2, .1]}));
+    return {sh, el, s};
+  });
+  // legs
+  [-1, 1].forEach(s => {
+    add(body, N(G(Mini.sphere(.13, 14, 10)), M.dark, {pos: [s * .3, -.78, 0]}));
+    add(body, N(G(Mini.roundedBox(.36, .4, .4, .12)), M.shell, {pos: [s * .3, -1.02, 0]}));
+    add(body, N(G(Mini.cylinder(.1, .12, .1)), M.dark, {pos: [s * .3, -1.27, 0]}));
+    add(body, N(G(Mini.roundedBox(.42, .16, .6, .07)), M.light, {pos: [s * .3, -1.38, .08]}));
+  });
+
+  // face: eyes that blink, or the SAHARAHUB symbol
+  let mode = 0, alpha = 1, blinkAt = 2, blinkT = -1, faceDirty = true;
+  function drawFace(tt) {
+    fx.globalAlpha = 1; fx.fillStyle = "#05070F"; fx.fillRect(0, 0, 512, 512);
+    fx.globalAlpha = alpha; fx.shadowBlur = 22;
+    if (mode === 0) {
+      let sq = 1; if (blinkT >= 0) { const k = (tt - blinkT) / .18; sq = k < .5 ? 1 - .9 * (k * 2) : k < 1 ? .1 + .9 * ((k - .5) * 2) : 1; }
+      fx.fillStyle = "#AFC0FF"; fx.shadowColor = "#6E86FF";
+      [[196, 262], [316, 252]].forEach(([x, y]) => { fx.beginPath(); fx.ellipse(x, y, 30, Math.max(3, 38 * sq), 0, 0, Math.PI * 2); fx.fill(); });
+    } else {
+      const R = 110, cx = 256, cy = 270;
+      fx.fillStyle = "#AFC0FF"; fx.shadowColor = "#6E86FF";
+      [[0, .316], [.388, .612], [.684, .842], [.914, 1]].forEach(([a, b]) => {
+        fx.beginPath();
+        for (let i = 0; i <= 16; i++) { const y = (a + (b - a) * i / 16) * R; fx.lineTo(cx - R / 2 + Math.sqrt(R * R - y * y), cy - 6 - y); }
+        for (let i = 16; i >= 0; i--) { const y = (a + (b - a) * i / 16) * R; fx.lineTo(cx - R / 2 - Math.sqrt(R * R - y * y), cy - 6 - y); }
+        fx.fill();
+      });
+      fx.fillStyle = "#FF7A30"; fx.shadowColor = "#FF7A30";
+      fx.beginPath(); fx.moveTo(cx - R / 2 + R, cy + 6); fx.arc(cx + R / 2, cy + 6, R, Math.PI, 0, true); fx.closePath(); fx.fill();
+    }
+    fx.shadowBlur = 0; faceTex.update();
+  }
+  const L = E.env({sky: "#FFF6EE", gnd: "#D9D2C8", kd: [-3, 5, 4], kc: "#FFF3E6", ki: 1.6, rd: [4, 2, -4], rc: "#C9D3FF", ri: 1.0, fd: [-3.2, 1.2, .6], fc: "#FF9A6A", fi: .45, exp: 1.04});
+  const cam = {fov: 30 * Math.PI / 180, pos: [0, 1.1, 11.6], target: [0, .55, 0]};
+  let visible = false, raf = 0, ps = 0, px = 0, py = 0, pxs = 0, pys = 0, t0 = performance.now(), lastT = 0;
+  stage.closest("section").addEventListener("pointermove", e => { const r = stage.getBoundingClientRect(); px = Math.max(-1, Math.min(1, (e.clientX - r.left) / r.width * 2 - 1)); py = Math.max(-1, Math.min(1, (e.clientY - r.top) / r.height * 2 - 1)); });
+  function progress() {
+    if (isRM()) return 0;
+    const r = sec.getBoundingClientRect(), vh = innerHeight, span = r.height - vh;
+    if (getComputedStyle(sec.querySelector('.pin')).position === 'sticky' && span > 0) return clamp01(-r.top / span);
+    const sr = stage.getBoundingClientRect();
+    return clamp01((vh * .25 - sr.top) / (sr.height * .8));
+  }
+  const ease = x => x < .5 ? 4 * x * x * x : 1 - Math.pow(-2 * x + 2, 3) / 2;
+  function frame(now) {
+    raf = 0;
+    const live = !isPaused() && !isRM();
+    const tt = live ? (now - t0) / 1000 : lastT; if (live) lastT = tt; else t0 = now - lastT * 1000;
+    const p = progress(); ps += (p - ps) * (live ? .08 : 1);
+    pxs += (px - pxs) * .06; pys += (py - pys) * .06;
+    const e = ease(ps), mob = innerWidth < 900 ? 1.18 : 1;
+    const z = lerp(11.6, 6.9, e) * mob, cy = lerp(1.1, 1.95, e), ly = lerp(.55, 1.72, e);
+    cam.pos = [pxs * .25, cy - pys * .1, z]; cam.target = [0, ly, 0];
+    const side = stage.getBoundingClientRect().left < innerWidth / 2 - 40 && innerWidth > 820 ? -1 : 1;
+    robot.rot = [0, side * lerp(-.42, -.2, e) + pxs * .12, 0];
+    body.pos = [0, live ? .02 * Math.sin(1.4 * tt) : 0, 0];
+    head.rot = [lerp(.16, .04, e) + pys * .18 + (live ? .02 * Math.sin(.9 * tt) : 0), side * lerp(-.6, -.06, e) + pxs * .45, side * lerp(.22, 0, e) + (live ? .02 * Math.sin(.7 * tt) : 0)];
+    arms.forEach(a => { a.sh.rot = [live ? .05 * Math.sin(1.4 * tt + a.s) : 0, 0, a.s * .16]; a.el.rot = [-.35 + (live ? .06 * Math.sin(1.4 * tt + a.s) : 0), 0, 0]; });
+    dataBars.forEach((b, i) => { b.pos[0] = -.95 + (live ? .05 * Math.sin(tt * 1.1 + i * .9) : 0); });
+    M.data.emI = .1 + (live ? .08 * Math.sin(tt * 2) : 0);
+    leds.forEach((l, i) => l.m.emI = 1.2 + (live ? .5 * Math.sin(tt * 3 + i * 2) : 0));
+    // face
+    const want = ps > .62 ? 1 : 0;
+    if (want !== mode) { mode = want; alpha = 0; }
+    if (alpha < 1) { alpha = Math.min(1, alpha + .05); faceDirty = true; }
+    if (live && mode === 0) { if (blinkT < 0 && tt > blinkAt) { blinkT = tt; } if (blinkT >= 0) { faceDirty = true; if (tt - blinkT > .18) { blinkT = -1; blinkAt = tt + 2.5 + Math.random() * 3; } } }
+    if (faceDirty) { drawFace(tt); faceDirty = false; }
+    E.render(world, cam, L);
+    if (visible) raf = requestAnimationFrame(frame);
+  }
+  const kick = () => { if (!raf && visible) raf = requestAnimationFrame(frame); };
+  whenVisible(stage, v => { visible = v; kick(); });
+  window.addEventListener("resize", () => { tabStep(true); kick(); });
+  window.__robot = { kick };
+  drawFace(0); visible = true; frame(performance.now()); visible = false;
+})();
+
+/* =====================================================================
+   CONTACT — example requests type themselves into the message field
+   (after Nova Agent's prompt box)
+   ===================================================================== */
+(function typing(){
+  const ta = document.getElementById("f-msg"); if (!ta) return;
+  let pi = 0, ci = 0, phase = "type", timer = 0;
+  const examples = () => [t("ct.ex1"), t("ct.ex2"), t("ct.ex3"), t("ct.ex4")];
+  function step() {
+    const busy = document.activeElement === ta || ta.value;
+    if (busy || isPaused() || isRM()) { if (isRM() && !ta.value) ta.placeholder = examples()[0]; timer = setTimeout(step, 400); return; }
+    const s = examples()[pi % 4];
+    if (phase === "type") { ci++; ta.placeholder = s.slice(0, ci) + "▌"; if (ci >= s.length) { phase = "hold"; timer = setTimeout(step, 2600); return; } timer = setTimeout(step, 38); }
+    else if (phase === "hold") { phase = "del"; timer = setTimeout(step, 14); }
+    else if (phase === "del") { ci = Math.max(0, ci - 2); ta.placeholder = s.slice(0, ci) + "▌"; if (!ci) { phase = "type"; pi++; timer = setTimeout(step, 250); return; } timer = setTimeout(step, 14); }
+  }
+  const io = new IntersectionObserver(es => { if (es[0].isIntersecting && !timer) step(); });
+  io.observe(ta);
+  window.__typing = () => { ci = 0; phase = "type"; };
+})();
+
+
+/* ---------- form ---------- */
+const form = document.getElementById("form"), statusEl = document.getElementById("status");
+function fieldError(id, key){
+  const input = document.getElementById(id), err = document.getElementById("e-" + id.slice(2));
+  if (key) { input.setAttribute("aria-invalid", "true"); err.dataset.key = key; err.textContent = t(key); }
+  else { input.removeAttribute("aria-invalid"); delete err.dataset.key; err.textContent = ""; }
+  return !key;
+}
+function validate(){
+  const name = form.name.value.trim(), email = form.email.value.trim(), msg = form.message.value.trim();
+  const a = fieldError("f-name", name ? null : "f.req");
+  const b = fieldError("f-email", !email ? "f.req" : (/^[^\s@]+@[^\s@]+\.[^\s@]{2,}$/.test(email) ? null : "f.bad"));
+  const c = fieldError("f-msg", msg ? null : "f.req");
+  if (!a) form.name.focus(); else if (!b) form.email.focus(); else if (!c) form.message.focus();
+  return a && b && c;
+}
+["f-name","f-email","f-msg"].forEach(id => document.getElementById(id).addEventListener("input", () => { if (document.getElementById(id).getAttribute("aria-invalid")) validate(); }));
+function setStatus(kind, key){ statusEl.className = "status " + kind; statusEl.dataset.key = key; statusEl.textContent = t(key); }
+form.addEventListener("submit", async e => {
+  e.preventDefault();
+  if (!validate()) return;
+  if (!FORM.accessKey || FORM.accessKey.startsWith("YOUR_")) { setStatus("info", "f.setup"); return; }
+  const btn = form.querySelector("button[type=submit]"), label = btn.querySelector("span");
+  btn.disabled = true; label.textContent = t("f.sending"); statusEl.textContent = ""; statusEl.className = "status"; delete statusEl.dataset.key;
+  try {
+    const data = Object.fromEntries(new FormData(form).entries());
+    const res = await fetch(FORM.endpoint, { method: "POST", headers: { "Content-Type": "application/json", Accept: "application/json" },
+      body: JSON.stringify({ access_key: FORM.accessKey, subject: FORM.subject, from_name: "Site SAHARAHUB", language: LANG, ...data }) });
+    const json = await res.json().catch(() => ({}));
+    if (res.ok && json.success !== false) { form.reset(); setStatus("ok", "f.ok"); }
+    else setStatus("bad", "f.err");
+  } catch (err) { setStatus("bad", "f.err"); }
+  finally { btn.disabled = false; label.textContent = t("f.send"); }
+});
+</script>
+</body>
+</html>
